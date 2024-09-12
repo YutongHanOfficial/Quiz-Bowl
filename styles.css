@@ -114,7 +114,7 @@ button.option:hover {
 
 /* Apply color changes to option buttons for correct/incorrect answers */
 button.option.correct {
-    background-color: #4CAF50; /* Correct - green */
+    background-color: #448044; /* Correct - green */
 }
 
 button.option.incorrect {
