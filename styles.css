@@ -89,6 +89,8 @@ button.option:hover {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease, filter 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Centering */
 }
 
 #next-btn:hover {
@@ -101,6 +103,7 @@ button.option:hover {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Styles for correct and incorrect answers */
