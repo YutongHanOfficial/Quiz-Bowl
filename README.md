@@ -1,1 +1,1 @@
-# Quiz-Bowl
+Quiz Bowl Packets: https://quizbowlpackets.com
