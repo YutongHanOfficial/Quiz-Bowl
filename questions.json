@@ -13,5 +13,9 @@
         "question": "What is the powerhouse of the cell?",
         "correct": "Mitochondria",
         "incorrect": ["Nucleus", "Ribosome", "Endoplasmic Reticulum", "Lysosome", "Golgi Apparatus"]
-    }
+    },
+    {
+        "question": "Who was the 16th president of the United States?",
+        "correct": "Abraham Lincoln",
+        "incorrect": ["George Washington", "Andrew Jackson", "Franklin D. Roosevelt", "John F. Kennedy", "Jimmy Carter"]
 ]
