@@ -63,11 +63,12 @@ main {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
 .option:hover {
     background-color: #45a049;
+    filter: hue-rotate(20deg);
 }
 
 #next-btn {
@@ -78,11 +79,12 @@ main {
     color: white;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
 #next-btn:hover {
     background-color: #007bb5;
+    filter: hue-rotate(20deg);
 }
 
 #feedback {
