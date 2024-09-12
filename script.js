@@ -26,15 +26,15 @@ function loadQuestion() {
     const options = document.querySelectorAll('.option');
     const currentQ = questions[currentQuestion];
 
-    // Set the question text
-    questionBox.innerText = currentQ.question;
-
     // Randomly select 3 incorrect answers and add the correct one
     const incorrectChoices = [...currentQ.incorrect];
     shuffleArray(incorrectChoices); // Shuffle the incorrect options first
     const selectedIncorrect = incorrectChoices.slice(0, 3); // Select 3 incorrect answers
     const allChoices = [...selectedIncorrect, currentQ.correct]; // Add the correct answer
     shuffleArray(allChoices); // Shuffle all options
+
+    // Set the question text
+    questionBox.innerText = currentQ.question;
 
     // Display the options
     options.forEach((option, index) => {
