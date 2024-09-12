@@ -1,9 +1,11 @@
+/* Reset margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -12,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header and footer styles */
 header, footer {
     background-color: #333;
     color: white;
@@ -27,6 +30,7 @@ footer p {
     font-size: 14px;
 }
 
+/* Main content styles */
 main {
     flex: 1;
     display: flex;
@@ -34,6 +38,7 @@ main {
     align-items: center;
 }
 
+/* Quiz container styling */
 .quiz-container {
     background-color: #fff;
     padding: 20px;
@@ -44,11 +49,13 @@ main {
     width: 100%;
 }
 
+/* Question text styling */
 #question {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* Options container styling */
 .options {
     display: flex;
     flex-direction: column;
@@ -56,7 +63,8 @@ main {
     margin-bottom: 20px;
 }
 
-.option {
+/* Option buttons styling */
+button.option {
     padding: 10px;
     background-color: #4CAF50;
     border: none;
@@ -66,11 +74,12 @@ main {
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
-.option:hover {
+button.option:hover {
     background-color: #45a049;
     filter: hue-rotate(20deg);
 }
 
+/* Next question button styling */
 #next-btn {
     padding: 10px 20px;
     background-color: #008CBA;
@@ -87,12 +96,14 @@ main {
     filter: hue-rotate(20deg);
 }
 
+/* Feedback text */
 #feedback {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
 }
 
+/* Styles for correct and incorrect answers */
 .correct {
     color: green;
 }
@@ -101,13 +112,23 @@ main {
     color: red;
 }
 
+/* Apply color changes to option buttons for correct/incorrect answers */
+button.option.correct {
+    background-color: #4CAF50; /* Correct - green */
+}
+
+button.option.incorrect {
+    background-color: #f44336; /* Incorrect - red */
+}
+
+/* Score tracker styling */
 #score-tracker {
     margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
 }
 
-/* Ensure the quiz container is centered with proper margin on large screens */
+/* Ensure quiz container is centered with proper margin on large screens */
 @media (min-width: 768px) {
     main {
         padding: 40px 0;
@@ -116,4 +137,10 @@ main {
     .quiz-container {
         max-width: 500px;
     }
+}
+
+/* Centering the Next Question button */
+#next-btn {
+    display: block;
+    margin: 0 auto;
 }
