@@ -75,7 +75,7 @@ button.option {
 }
 
 button.option:hover {
-    background-color: #c8c8c8;
+    background-color: #e1e1e1;
     filter: hue-rotate(20deg);
 }
 
@@ -114,11 +114,11 @@ button.option:hover {
 
 /* Apply color changes to option buttons for correct/incorrect answers */
 button.option.correct {
-    background-color: #4caf50; /* Correct - green */
+    background-color: #90ee90; /* Correct - green */
 }
 
 button.option.incorrect {
-    background-color: #f44336; /* Incorrect - red */
+    background-color: #ffcccb; /* Incorrect - red */
 }
 
 /* Score tracker styling */
