@@ -1,0 +1,17 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "correct": "Paris",
+        "incorrect": ["Berlin", "Madrid", "Rome", "Lisbon", "Vienna"]
+    },
+    {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "correct": "Harper Lee",
+        "incorrect": ["J.K. Rowling", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain", "George Orwell"]
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "correct": "Mitochondria",
+        "incorrect": ["Nucleus", "Ribosome", "Endoplasmic Reticulum", "Lysosome", "Golgi Apparatus"]
+    }
+]
