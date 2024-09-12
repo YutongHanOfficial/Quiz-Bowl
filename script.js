@@ -10,23 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
     let totalQuestionsAnswered = 0;
 
-    // Load questions from a text file
-    fetch('questions.txt')
-        .then(response => response.text())
+    // Load questions from the JSON file
+    fetch('questions.json')
+        .then(response => response.json())
         .then(data => {
-            questions = parseQuestions(data);
+            questions = data;
             shuffleArray(questions); // Shuffle questions
             displayQuestion();
         })
         .catch(error => console.error('Error loading questions:', error));
 
-    function parseQuestions(data) {
-        return data.trim().split('\n').map(line => {
-            const [correct, ...incorrect] = line.split('|');
-            return { correct, incorrect };
-        });
-    }
-
+    // Shuffle an array (Fisher-Yates algorithm)
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -34,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Display the current question and shuffled answer options
     function displayQuestion() {
         if (currentQuestionIndex >= questions.length) {
             questionBox.textContent = 'No more questions!';
@@ -43,9 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const question = questions[currentQuestionIndex];
-        questionBox.textContent = `What is the correct answer?`;
+        questionBox.textContent = question.question;
 
-        const allOptions = [question.correct, ...question.incorrect];
+        // Select 3 random incorrect answers
+        const incorrectAnswers = question.incorrect.slice();
+        shuffleArray(incorrectAnswers);
+        const selectedIncorrect = incorrectAnswers.slice(0, 3);
+
+        // Combine the correct answer with 3 random incorrect ones
+        const allOptions = [question.correct, ...selectedIncorrect];
         shuffleArray(allOptions);
 
         options.forEach((option, index) => {
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.style.display = 'block';
     }
 
+    // Handle answer selection
     function selectAnswer(index) {
         const selectedOption = options[index];
         if (selectedOption.dataset.correct === 'true') {
