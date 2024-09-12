@@ -1,95 +1,86 @@
-let questions = [];
-let currentQuestion = 0;
-let selectedAnswer = null;
-let correctAnswers = 0;
-let totalQuestions = 0;
-
-function loadQuestions() {
-    fetch('questions.json')
-        .then(response => response.json())
-        .then(data => {
-            questions = data;
-            loadQuestion();
-        })
-        .catch(error => console.error("Error loading questions:", error));
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-function loadQuestion() {
+document.addEventListener('DOMContentLoaded', () => {
     const questionBox = document.getElementById('question');
-    const options = document.querySelectorAll('.option');
-    const currentQ = questions[currentQuestion];
-
-    // Randomly select 3 incorrect answers and add the correct one
-    const incorrectChoices = [...currentQ.incorrect];
-    shuffleArray(incorrectChoices); // Shuffle the incorrect options first
-    const selectedIncorrect = incorrectChoices.slice(0, 3); // Select 3 incorrect answers
-    const allChoices = [...selectedIncorrect, currentQ.correct]; // Add the correct answer
-    shuffleArray(allChoices); // Shuffle all options
-
-    // Set the question text
-    questionBox.innerText = currentQ.question;
-
-    // Display the options
-    options.forEach((option, index) => {
-        option.innerText = allChoices[index];
-        option.style.backgroundColor = '#4CAF50'; // Reset button colors
-        option.disabled = false; // Re-enable the buttons for the new question
-    });
-
-    document.getElementById('feedback').innerText = "";
-    selectedAnswer = null;
-    updateScore();
-}
-
-function selectAnswer(index) {
-    const options = document.querySelectorAll('.option');
-    selectedAnswer = options[index].innerText;
-    const currentQ = questions[currentQuestion];
+    const options = Array.from(document.querySelectorAll('.option'));
     const feedback = document.getElementById('feedback');
+    const nextButton = document.getElementById('next-btn');
+    const scoreTracker = document.getElementById('score-tracker');
 
-    options.forEach((option, idx) => {
-        option.disabled = true; // Disable buttons after answering
-        if (option.innerText === currentQ.correct) {
-            option.style.backgroundColor = 'green'; // Highlight the correct answer
+    let questions = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let totalQuestionsAnswered = 0;
+
+    // Load questions from a text file
+    fetch('questions.txt')
+        .then(response => response.text())
+        .then(data => {
+            questions = parseQuestions(data);
+            shuffleArray(questions); // Shuffle questions
+            displayQuestion();
+        })
+        .catch(error => console.error('Error loading questions:', error));
+
+    function parseQuestions(data) {
+        return data.trim().split('\n').map(line => {
+            const [correct, ...incorrect] = line.split('|');
+            return { correct, incorrect };
+        });
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
-        if (selectedAnswer !== currentQ.correct && option.innerText === selectedAnswer) {
-            option.style.backgroundColor = 'red'; // Highlight wrong answer
+    }
+
+    function displayQuestion() {
+        if (currentQuestionIndex >= questions.length) {
+            questionBox.textContent = 'No more questions!';
+            options.forEach(option => option.style.display = 'none');
+            nextButton.style.display = 'none';
+            return;
         }
+
+        const question = questions[currentQuestionIndex];
+        questionBox.textContent = `What is the correct answer?`;
+
+        const allOptions = [question.correct, ...question.incorrect];
+        shuffleArray(allOptions);
+
+        options.forEach((option, index) => {
+            option.textContent = allOptions[index];
+            option.dataset.correct = option.textContent === question.correct;
+        });
+
+        feedback.textContent = '';
+        nextButton.style.display = 'block';
+    }
+
+    function selectAnswer(index) {
+        const selectedOption = options[index];
+        if (selectedOption.dataset.correct === 'true') {
+            feedback.textContent = 'Correct!';
+            feedback.className = 'correct';
+            score++;
+        } else {
+            feedback.textContent = 'Incorrect!';
+            feedback.className = 'incorrect';
+        }
+
+        totalQuestionsAnswered++;
+        scoreTracker.textContent = `Score: ${score} / ${totalQuestionsAnswered}`;
+
+        setTimeout(() => {
+            currentQuestionIndex++;
+            displayQuestion();
+        }, 1000);
+    }
+
+    window.selectAnswer = selectAnswer; // Make selectAnswer accessible from HTML
+
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        displayQuestion();
     });
-
-    if (selectedAnswer === currentQ.correct) {
-        feedback.innerText = "Correct!";
-        feedback.className = "correct";
-        correctAnswers++;
-    } else {
-        feedback.innerText = "Wrong answer!";
-        feedback.className = "incorrect";
-    }
-
-    totalQuestions++;
-    updateScore();
-}
-
-function nextQuestion() {
-    currentQuestion++;
-    if (currentQuestion < questions.length) {
-        loadQuestion();
-    } else {
-        document.getElementById('question-box').innerHTML = "<h2>You've completed the quiz!</h2>";
-        document.getElementById('next-btn').style.display = "none";
-    }
-}
-
-function updateScore() {
-    document.getElementById('score-tracker').innerText = `Score: ${correctAnswers} / ${totalQuestions}`;
-}
-
-// Load the questions when the page loads
-window.onload = loadQuestions;
+});
