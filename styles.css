@@ -69,13 +69,13 @@ button.option {
     background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
 button.option:hover {
-    background-color: #45a049;
+    background-color: #c8c8c8;
     filter: hue-rotate(20deg);
 }
 
