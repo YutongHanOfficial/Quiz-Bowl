@@ -7,22 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Quiz Bowl Practice</h1>
-        <div id="question-box">
-            <p id="question">Question will appear here</p>
-            <div class="options">
-                <button class="option" onclick="selectAnswer(0)">Option 1</button>
-                <button class="option" onclick="selectAnswer(1)">Option 2</button>
-                <button class="option" onclick="selectAnswer(2)">Option 3</button>
-                <button class="option" onclick="selectAnswer(3)">Option 4</button>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="question-box">
+                <p id="question">Question will appear here</p>
+                <div class="options">
+                    <button class="option" onclick="selectAnswer(0)">Option 1</button>
+                    <button class="option" onclick="selectAnswer(1)">Option 2</button>
+                    <button class="option" onclick="selectAnswer(2)">Option 3</button>
+                    <button class="option" onclick="selectAnswer(3)">Option 4</button>
+                </div>
+                <div id="feedback"></div>
+                <button id="next-btn" onclick="nextQuestion()">Next Question</button>
             </div>
-            <div id="feedback"></div>
-            <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            <div id="score-tracker">Score: 0 / 0</div>
         </div>
-        <!-- Score Tracker placed below the main question block -->
-        <div id="score-tracker">Score: 0 / 0</div>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
