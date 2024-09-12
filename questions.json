@@ -18,4 +18,5 @@
         "question": "Who was the 16th president of the United States?",
         "correct": "Abraham Lincoln",
         "incorrect": ["George Washington", "Andrew Jackson", "Franklin D. Roosevelt", "John F. Kennedy", "Jimmy Carter"]
+    }
 ]
