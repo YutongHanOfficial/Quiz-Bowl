@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         options.forEach((option, index) => {
             option.textContent = allOptions[index];
+            option.classList.remove('correct', 'incorrect'); // Remove color classes
             option.dataset.correct = option.textContent === question.correct;
             option.disabled = false; // Enable buttons again
         });
@@ -69,10 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedOption.dataset.correct === 'true') {
             feedback.textContent = 'Correct!';
             feedback.className = 'correct';
+            selectedOption.classList.add('correct');
             score++;
         } else {
             feedback.textContent = 'Incorrect!';
             feedback.className = 'incorrect';
+            selectedOption.classList.add('incorrect');
         }
 
         totalQuestionsAnswered++;
