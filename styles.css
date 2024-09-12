@@ -21,10 +21,22 @@ header {
     padding: 20px 0;
     text-align: center;
     color: white;
+    position: relative;
 }
 
 h1 {
     font-size: 2.5rem;
+}
+
+#score-tracker {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 main {
@@ -59,16 +71,28 @@ main {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .option:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 #feedback {
     margin-top: 20px;
     font-size: 1.2rem;
+    height: 40px;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
 }
 
 #next-btn {
@@ -80,11 +104,12 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 #next-btn:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 footer {
