@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentQuestionIndex = 0;
     let score = 0;
     let totalQuestionsAnswered = 0;
+    let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
     // Load questions from the JSON file
     fetch('questions.json')
@@ -52,14 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
         options.forEach((option, index) => {
             option.textContent = allOptions[index];
             option.dataset.correct = option.textContent === question.correct;
+            option.disabled = false; // Enable buttons again
         });
 
         feedback.textContent = '';
-        nextButton.style.display = 'block';
+        isAnswered = false;
+        nextButton.style.display = 'none'; // Hide the "Next Question" button until an answer is chosen
     }
 
     // Handle answer selection
     function selectAnswer(index) {
+        if (isAnswered) return; // Prevent multiple answers being selected before clicking next
+
         const selectedOption = options[index];
         if (selectedOption.dataset.correct === 'true') {
             feedback.textContent = 'Correct!';
@@ -73,10 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
         totalQuestionsAnswered++;
         scoreTracker.textContent = `Score: ${score} / ${totalQuestionsAnswered}`;
 
-        setTimeout(() => {
-            currentQuestionIndex++;
-            displayQuestion();
-        }, 1000);
+        options.forEach(option => option.disabled = true); // Disable buttons after selecting an answer
+        nextButton.style.display = 'block'; // Show the "Next Question" button
+        isAnswered = true; // Mark question as answered
     }
 
     window.selectAnswer = selectAnswer; // Make selectAnswer accessible from HTML
