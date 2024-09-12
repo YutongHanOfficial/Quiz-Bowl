@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bowl Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Bowl Practice</h1>
+    </header>
+
+    <main>
+        <div id="quiz-container">
+            <div id="question-box">
+                <h2 id="question">Question will appear here</h2>
+                <div class="options">
+                    <button class="option" onclick="selectAnswer(0)">Answer 1</button>
+                    <button class="option" onclick="selectAnswer(1)">Answer 2</button>
+                    <button class="option" onclick="selectAnswer(2)">Answer 3</button>
+                    <button class="option" onclick="selectAnswer(3)">Answer 4</button>
+                </div>
+            </div>
+            <div id="feedback"></div>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </main>
+
+    <footer>
+        <p>Powered by Quiz Bowl Practice &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
