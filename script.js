@@ -67,7 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isAnswered) return; // Prevent multiple answers being selected before clicking next
 
         const selectedOption = options[index];
-        if (selectedOption.dataset.correct === 'true') {
+        const isCorrect = selectedOption.dataset.correct === 'true';
+
+        if (isCorrect) {
             feedback.textContent = 'Correct!';
             feedback.className = 'correct';
             selectedOption.classList.add('correct');
@@ -76,6 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
             feedback.textContent = 'Incorrect!';
             feedback.className = 'incorrect';
             selectedOption.classList.add('incorrect');
+            
+            // Highlight the correct answer in green
+            options.forEach(option => {
+                if (option.dataset.correct === 'true') {
+                    option.classList.add('correct');
+                }
+            });
         }
 
         totalQuestionsAnswered++;
