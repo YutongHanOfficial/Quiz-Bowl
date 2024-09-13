@@ -1,5 +1,28 @@
 [
     {
+        "question": "The death of Crassus ended the First Triumvirate, which also included Pompey and this man who conquered Gaul and was assassinated on the Ides of March. [Question courtesy of National Academic Quiz Tournaments, LLC.]",
+        "correct": "Julius Caesar",
+        "incorrect": ["Augustus", "Caligula", "Nero", "Marcus Aurelius", "Constantine the Great"]
+    },
+    {
+        "question": "'It was a pleasure to burn' opens this novel by Ray Bradbury titled for the temperature at which books catch fire. [Question courtesy of National Academic Quiz Tournaments, LLC.]",
+        "correct": "Fahrenheit 451",
+        "incorrect": ["Nineteen Eighty-Four", "Lord of the Flies", "The Giver", "Brave New World", "Atlas Shrugged"]
+    },
+    {
+        "question": "During his confirmation hearings, this man denied that he had ever read the book The Exorcist. Name this man who claimed he was the victim of a “high-tech lynching” during hearings in which he was accused of sexual harassment by Anita Hill. [Question courtesy of National Academic Quiz Tournaments, LLC.]",
+        "correct": "Clarence Thomas",
+        "incorrect": ["Samuel Alito", "Brett Kavanaugh", "Neil Gorsuch", "Antonin Scalia", "Anthony Kennedy"]
+    },
+    {
+        /* 
+        "question": "Example Question",
+        "correct": "Correct",
+        "incorrect": ["Incorrect1", "Incorrect2", "Incorrect3", "Incorrect4", "Incorrect5"]
+        */
+    },
+    /*
+    {
         "question": "What is the capital of France?",
         "correct": "Paris",
         "incorrect": ["Berlin", "Madrid", "Rome", "Lisbon", "Vienna"]
@@ -18,5 +41,6 @@
         "question": "Who was the 16th president of the United States?",
         "correct": "Abraham Lincoln",
         "incorrect": ["George Washington", "Andrew Jackson", "Franklin D. Roosevelt", "John F. Kennedy", "Jimmy Carter"]
-    }
+    },
+    */
 ]
