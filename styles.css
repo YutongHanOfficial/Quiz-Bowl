@@ -47,6 +47,7 @@ main {
     text-align: center;
     max-width: 600px;
     width: 100%;
+    position: relative; /* Added to allow absolute positioning of child elements */
 }
 
 /* Question text styling */
@@ -79,18 +80,30 @@ button.option:hover {
     filter: hue-rotate(20deg);
 }
 
-/* Next question button styling */
+/* Feedback and Next Question button positioning */
+#feedback, #next-btn {
+    position: absolute; /* Positioning relative to .quiz-container */
+    left: 50%;
+    transform: translateX(-50%); /* Centering horizontally */
+}
+
+#feedback {
+    top: 100%; /* Position below the quiz container */
+    margin-top: 20px; /* Space between quiz container and feedback */
+    font-size: 16px;
+    font-weight: bold;
+}
+
 #next-btn {
+    top: calc(100% + 50px); /* Position below the feedback text */
+    margin-top: 20px; /* Space between feedback and button */
     padding: 10px 20px;
     background-color: #008CBA;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    margin-top: 20px;
     transition: background-color 0.3s ease, filter 0.3s ease;
-    display: block;
-    margin: 0 auto; /* Centering */
 }
 
 #next-btn:hover {
@@ -99,14 +112,6 @@ button.option:hover {
 }
 
 /* Feedback text */
-#feedback {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-/* Styles for correct and incorrect answers */
 .correct {
     color: green;
 }
@@ -126,9 +131,9 @@ button.option.incorrect {
 
 /* Score tracker styling */
 #score-tracker {
-    margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 /* Ensure quiz container is centered with proper margin on large screens */
@@ -140,10 +145,4 @@ button.option.incorrect {
     .quiz-container {
         max-width: 500px;
     }
-}
-
-/* Centering the Next Question button */
-#next-btn {
-    display: block;
-    margin: 0 auto;
 }
