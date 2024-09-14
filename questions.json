@@ -14,4 +14,9 @@
         "correct": "Clarence Thomas",
         "incorrect": ["Samuel Alito", "Brett Kavanaugh", "Neil Gorsuch", "Antonin Scalia", "Anthony Kennedy"]
     },
+    {
+        "question": "Vandalia would have occupied the land just south of this river, which also marked the southern boundary of the Northwest Territory. [Question courtesy of National Academic Quiz Tournaments, LLC.]",
+        "correct": "Ohio River",
+        "incorrect": ["Mississippi River", "Missouri River", "Colorado River", "Rio Grande", "Arkansas River"]
+    }
 ]
