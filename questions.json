@@ -5,7 +5,7 @@
         "incorrect": ["Augustus", "Caligula", "Nero", "Marcus Aurelius", "Constantine the Great"]
     },
     {
-        "question": "'It was a pleasure to burn' opens this novel by Ray Bradbury titled for the temperature at which books catch fire. [Question © NAQT]",
+        "question": "“It was a pleasure to burn“ opens this novel by Ray Bradbury titled for the temperature at which books catch fire. [Question © NAQT]",
         "correct": "Fahrenheit 451",
         "incorrect": ["Nineteen Eighty-Four", "Lord of the Flies", "The Giver", "Brave New World", "Atlas Shrugged"]
     },
@@ -18,5 +18,25 @@
         "question": "Vandalia would have occupied the land just south of this river, which also marked the southern boundary of the Northwest Territory. [Question © NAQT]",
         "correct": "Ohio River",
         "incorrect": ["Mississippi River", "Missouri River", "Colorado River", "Rio Grande", "Arkansas River"]
+    },
+    {
+        "question": "About 2 percent of Mars’s atmosphere consists of this gas, which is used along with potassium in a method of radioactive dating that does not involve carbon. [Question © NAQT]",
+        "correct": "Argon",
+        "incorrect": ["Uranium", "Lead", "Rubidium", "Strontium", "Radium"]
+    },
+    {
+        "question": "A philosopher who wrote in this language argued for the existence of God using the “proof of the truthful.” Name this language used by Avicenna, who wrote during the first half of the 11th century. [Question © NAQT]",
+        "correct": "Arabic",
+        "incorrect": ["Latin", "French", "Spanish", "German", "Romanian"]
+    },
+    {
+        "question": "A speedrunning technique in this game called “divine travel” locates endgame structures using the random placements of fossils or animals. Name this sandbox game developed by Mojang. [Question © NAQT]",
+        "correct": "Minecraft",
+        "incorrect": ["Roblox", "Fortnite", "Terraria", "Grand Theft Auto V", "Cyberpunk 2077"]
+    },
+    {
+        "question": "In 2010 this country’s former president Evo Morales declared it to be a “plurinational state.” Name this landlocked South American country that shares Lake Titicaca with its western neighbor. [Question © NAQT]",
+        "correct": "Bolivia",
+        "incorrect": ["Paraguay", "Peru", "Uruguay", "Guyana", "Suriname"]
     }
 ]
