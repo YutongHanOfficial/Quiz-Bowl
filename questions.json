@@ -5,7 +5,7 @@
         "incorrect": ["Augustus", "Caligula", "Nero", "Marcus Aurelius", "Constantine the Great"]
     },
     {
-        "question": "'It was a pleasure to burn' opens this novel by Ray Bradbury titled for the temperature at which books catch fire.\n[Question © NAQT]",
+        "question": "'It was a pleasure to burn' opens this novel by Ray Bradbury titled for the temperature at which books catch fire.\\n[Question © NAQT]",
         "correct": "Fahrenheit 451",
         "incorrect": ["Nineteen Eighty-Four", "Lord of the Flies", "The Giver", "Brave New World", "Atlas Shrugged"]
     },
