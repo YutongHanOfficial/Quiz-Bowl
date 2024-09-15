@@ -1,51 +1,51 @@
 [
     {
-        "question": "The death of Crassus ended the First Triumvirate, which also included Pompey and this man who conquered Gaul and was assassinated on the Ides of March.",
+        "question": "The death of Crassus ended the First Triumvirate, which also included Pompey and this man who conquered Gaul and was assassinated on the Ides of March. [NAQT_0001]",
         "correct": "Julius Caesar",
         "incorrect": ["Augustus", "Caligula", "Nero", "Marcus Aurelius", "Constantine the Great"]
     },
     {
-        "question": "“It was a pleasure to burn“ opens this novel by Ray Bradbury titled for the temperature at which books catch fire.",
+        "question": "“It was a pleasure to burn“ opens this novel by Ray Bradbury titled for the temperature at which books catch fire. [NAQT_0002]",
         "correct": "Fahrenheit 451",
         "incorrect": ["Nineteen Eighty-Four", "Lord of the Flies", "The Giver", "Brave New World", "Atlas Shrugged"]
     },
     {
-        "question": "During his confirmation hearings, this man denied that he had ever read the book The Exorcist. Name this man who claimed he was the victim of a “high-tech lynching” during hearings in which he was accused of sexual harassment by Anita Hill.",
+        "question": "During his confirmation hearings, this man denied that he had ever read the book The Exorcist. Name this man who claimed he was the victim of a “high-tech lynching” during hearings in which he was accused of sexual harassment by Anita Hill. [NAQT_0003]",
         "correct": "Clarence Thomas",
         "incorrect": ["Samuel Alito", "Brett Kavanaugh", "Neil Gorsuch", "Antonin Scalia", "Anthony Kennedy"]
     },
     {
-        "question": "Vandalia would have occupied the land just south of this river, which also marked the southern boundary of the Northwest Territory.",
+        "question": "Vandalia would have occupied the land just south of this river, which also marked the southern boundary of the Northwest Territory. [NAQT_0004]",
         "correct": "Ohio River",
         "incorrect": ["Mississippi River", "Missouri River", "Colorado River", "Rio Grande", "Arkansas River"]
     },
     {
-        "question": "About 2 percent of Mars’s atmosphere consists of this gas, which is used along with potassium in a method of radioactive dating that does not involve carbon.",
+        "question": "About 2 percent of Mars’s atmosphere consists of this gas, which is used along with potassium in a method of radioactive dating that does not involve carbon. [NAQT_0005]",
         "correct": "Argon",
         "incorrect": ["Uranium", "Lead", "Rubidium", "Strontium", "Radium"]
     },
     {
-        "question": "A philosopher who wrote in this language argued for the existence of God using the “proof of the truthful.” Name this language used by Avicenna, who wrote during the first half of the 11th century.",
+        "question": "A philosopher who wrote in this language argued for the existence of God using the “proof of the truthful.” Name this language used by Avicenna, who wrote during the first half of the 11th century. [NAQT_0006]",
         "correct": "Arabic",
         "incorrect": ["Latin", "French", "Spanish", "German", "Romanian"]
     },
     {
-        "question": "A speedrunning technique in this game called “divine travel” locates endgame structures using the random placements of fossils or animals. Name this sandbox game developed by Mojang.",
+        "question": "A speedrunning technique in this game called “divine travel” locates endgame structures using the random placements of fossils or animals. Name this sandbox game developed by Mojang. [NAQT_0007]",
         "correct": "Minecraft",
         "incorrect": ["Roblox", "Fortnite", "Terraria", "Grand Theft Auto V", "Cyberpunk 2077"]
     },
     {
-        "question": "In 2010 this country’s former president Evo Morales declared it to be a “plurinational state.” Name this landlocked South American country that shares Lake Titicaca with its western neighbor.",
+        "question": "In 2010 this country’s former president Evo Morales declared it to be a “plurinational state.” Name this landlocked South American country that shares Lake Titicaca with its western neighbor. [NAQT_0008]",
         "correct": "Bolivia",
         "incorrect": ["Paraguay", "Peru", "Uruguay", "Guyana", "Suriname"]
     },
     {
-        "question": "This city was the capital of the princely state of Awadh before its annexation by the British East India Company. Identify this city where the Indian National Congress and the Muslim League signed a short-lived namesake cooperation pact in 1916.",
+        "question": "This city was the capital of the princely state of Awadh before its annexation by the British East India Company. Identify this city where the Indian National Congress and the Muslim League signed a short-lived namesake cooperation pact in 1916. [NAQT_0009]",
         "correct": "Lucknow",
         "incorrect": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Ahmedabad", "Chennai", "Kolkata", "Surat", "Pune", "Jaipur"]
     },
     {
-        "question": "The Initiative for the Resurgence of the Abolitionist Movement is an anti-slavery group in this country that in 1981 became the last in the world to officially abolish slavery.",
+        "question": "The Initiative for the Resurgence of the Abolitionist Movement is an anti-slavery group in this country that in 1981 became the last in the world to officially abolish slavery. [NAQT_0010]",
         "correct": "Mauritania",
         "incorrect": ["North Korea", "Eritrea", "Saudi Arabia", "Türkiye", "Tajikistan", "United Arab Emirates", "Russia", "Afghanistan", "Kuwait", "Indonesia"]
     }
