@@ -3,11 +3,11 @@
 A website dedicated to helping **you** get better at Quiz Bowl.
 
 Current Stats:
-* 10 Questions
-* 70 Answer Choices
+* 12 Questions
+* 90 Answer Choices
 
 Question Sources:
 * [2022 High School National Championship Tournament Packet 1](https://www.naqt.com/samples/hsnct.pdf)
 
 Question Codes:
-* NAQT: National Academic Quiz Tournaments, LLC.
+* [NAQT]: National Academic Quiz Tournaments, LLC.
