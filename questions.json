@@ -48,5 +48,15 @@
         "question": "The Initiative for the Resurgence of the Abolitionist Movement is an anti-slavery group in this country that in 1981 became the last in the world to officially abolish slavery. [NAQT_0010]",
         "correct": "Mauritania",
         "incorrect": ["North Korea", "Eritrea", "Saudi Arabia", "Türkiye", "Tajikistan", "United Arab Emirates", "Russia", "Afghanistan", "Kuwait", "Indonesia"]
+    },
+    {
+        "question": "This town was where the first issues of The Lily, the first woman-edited newspaper in the U.S., were printed. While living in this town, Amelia Bloomer popularized the women’s garment now called “bloomers.” In this town, a two-day conference partly organized by Elizabeth Cady Stanton produced the Declaration of Sentiments. What upstate New York town hosted a landmark 1848 women’s rights convention? [NAQT_0011]",
+        "correct": "Seneca Falls",
+        "incorrect": ["Ithaca", "Albany", "Buffalo", "Schenectady", "Utica", "Oswego", "Rochester", "Syracuse", "Poughkeepsie", "Lockport"]
+    },
+    {
+        "question": "In a theory of this phenomenon that takes path integrals over a “spin foam,” space is quantized on the Planck scale. This phenomenon is mediated by a hypothetical massless spin–2 gauge boson. Adding an explanation of this phenomenon to Grand Unified Theory would produce a “theory of everything.” General relativity explains what fundamental force that causes attraction between massive objects? [NAQT_0012]",
+        "correct": "Gravity",
+        "incorrect": ["Electromagnetism", "Tension", "Friction", "Buoyancy", "Lift", "Drag", "Inertia", "Air Resistance"]
     }
 ]
