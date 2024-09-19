@@ -36,6 +36,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Add padding to main content */
 }
 
 /* Difficulty screen styling */
@@ -61,36 +62,36 @@ main {
     margin-top: 20px;
 }
 
-.difficulty-buttons button {
-    padding: 15px 30px;
-    font-size: 18px;
+/* Reuse styles from quiz options */
+.option {
+    padding: 10px;
+    background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
-    color: white;
-    background-color: #4CAF50; /* Default button color */
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
-.difficulty-buttons button:hover {
-    background-color: #45a049;
+.option:hover {
+    background-color: #e1e1e1;
     filter: hue-rotate(20deg);
 }
 
 /* Specific colors for difficulty levels */
-.difficulty-buttons button.easy {
+.option.easy {
     background-color: #66bb6a; /* Green for easy */
 }
 
-.difficulty-buttons button.medium {
+.option.medium {
     background-color: #ffa000; /* Orange for medium */
 }
 
-.difficulty-buttons button.hard {
+.option.hard {
     background-color: #ff7043; /* Red for hard */
 }
 
-.difficulty-buttons button.expert {
+.option.expert {
     background-color: #8e24aa; /* Purple for expert */
 }
 
@@ -150,7 +151,6 @@ button.option:hover {
 
 #next-btn:hover {
     background-color: #007bb5;
-    filter: hue-rotate(20deg);
 }
 
 /* Feedback text */
