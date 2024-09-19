@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedback = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
-    const difficultySelect = document.getElementById('difficulty');
-    const startButton = document.getElementById('start-btn');
+    const difficultyButtons = document.querySelectorAll('.difficulty-buttons button');
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -16,10 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
     // Load questions based on selected difficulty
-    function loadQuestions() {
-        const selectedDifficulty = difficultySelect.value;
-
-        fetch(`questions/${selectedDifficulty}`)
+    function loadQuestions(difficulty) {
+        fetch(`questions/${difficulty}`)
             .then(response => response.json())
             .then(data => {
                 questions = data;
@@ -112,7 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
         displayQuestion();
     });
 
-    startButton.addEventListener('click', () => {
-        loadQuestions(); // Load questions when the user clicks "Start Quiz"
+    difficultyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const difficulty = button.getAttribute('data-difficulty');
+            loadQuestions(difficulty); // Load questions based on the clicked difficulty
+        });
     });
 });
