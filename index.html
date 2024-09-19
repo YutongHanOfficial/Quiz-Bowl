@@ -12,17 +12,21 @@
     </header>
 
     <main>
-        <div class="quiz-container">
+        <div id="difficulty-screen" class="difficulty-screen">
+            <h2>Select Difficulty</h2>
             <div class="difficulty-selector">
-                <label for="difficulty">Select Difficulty:</label>
-                <select id="difficulty" onchange="loadQuestions()">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
                     <option value="easy.json">Easy</option>
                     <option value="medium.json">Medium</option>
                     <option value="hard.json">Hard</option>
                     <option value="expert.json">Expert</option>
                 </select>
+                <button id="start-btn">Start Quiz</button>
             </div>
+        </div>
 
+        <div id="quiz-container" class="quiz-container" style="display: none;">
             <div id="question-box">
                 <p id="question">Question will appear here</p>
                 <ul class="options">
