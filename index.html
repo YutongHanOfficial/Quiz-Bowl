@@ -15,11 +15,12 @@
         <div id="difficulty-screen" class="difficulty-screen">
             <h2>Select Difficulty</h2>
             <div class="difficulty-buttons">
-                <button class="difficulty easy" data-difficulty="easy.json">Easy</button>
-                <button class="difficulty medium" data-difficulty="medium.json">Medium</button>
-                <button class="difficulty hard" data-difficulty="hard.json">Hard</button>
-                <button class="difficulty expert" data-difficulty="expert.json">Expert</button>
+                <button class="option easy" onclick="selectDifficulty('easy.json')">Easy</button>
+                <button class="option medium" onclick="selectDifficulty('medium.json')">Medium</button>
+                <button class="option hard" onclick="selectDifficulty('hard.json')">Hard</button>
+                <button class="option expert" onclick="selectDifficulty('expert.json')">Expert</button>
             </div>
+            <button id="start-btn" class="option" onclick="startQuiz()">Start Quiz</button>
         </div>
 
         <div id="quiz-container" class="quiz-container" style="display: none;">
@@ -32,7 +33,7 @@
                     <li><button class="option" onclick="selectAnswer(3)">Option 4</button></li>
                 </ul>
                 <div id="feedback"></div>
-                <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+                <button id="next-btn" class="option" onclick="nextQuestion()">Next Question</button>
             </div>
             <div id="score-tracker">Score: 0 / 0</div>
         </div>
