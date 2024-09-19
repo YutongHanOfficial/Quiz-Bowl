@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
     // Load questions based on selected difficulty
-    function loadQuestions(difficulty) {
-        fetch(`questions/${difficulty}`)
+    function loadQuestions(fileName) {
+        fetch(`questions/${fileName}`)
             .then(response => response.json())
             .then(data => {
                 questions = data;
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     difficultyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const difficulty = button.getAttribute('data-difficulty');
+            const difficulty = button.textContent.toLowerCase() + '.json'; // Get the file name based on button text
             loadQuestions(difficulty); // Load questions based on the clicked difficulty
         });
     });
