@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const difficultyScreen = document.getElementById('difficulty-screen');
+    const quizContainer = document.getElementById('quiz-container');
     const questionBox = document.getElementById('question');
     const options = Array.from(document.querySelectorAll('.option'));
     const feedback = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
     const difficultySelect = document.getElementById('difficulty');
+    const startButton = document.getElementById('start-btn');
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -22,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 questions = data;
                 shuffleArray(questions); // Shuffle questions
                 displayQuestion();
+                difficultyScreen.style.display = 'none';
+                quizContainer.style.display = 'block';
             })
             .catch(error => console.error('Error loading questions:', error));
     }
@@ -107,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayQuestion();
     });
 
-    // Initial load of questions
-    loadQuestions(); // Load questions when the page is first loaded
+    startButton.addEventListener('click', () => {
+        loadQuestions(); // Load questions when the user clicks "Start Quiz"
+    });
 });
