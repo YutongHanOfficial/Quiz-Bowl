@@ -12,19 +12,10 @@
     </header>
 
     <main>
-        <!-- Difficulty selection -->
-        <div class="difficulty-selection">
-            <h2>Select Difficulty</h2>
-            <button onclick="selectDifficulty('easy')">Easy</button>
-            <button onclick="selectDifficulty('medium')">Medium</button>
-            <button onclick="selectDifficulty('hard')">Hard</button>
-            <button onclick="selectDifficulty('expert')">Expert</button>
-        </div>
-
-        <!-- Quiz container (hidden until difficulty is selected) -->
-        <div class="quiz-container hidden" id="quiz-container">
+        <div class="quiz-container">
             <div id="question-box">
                 <p id="question">Question will appear here</p>
+                <p id="difficulty">Difficulty: N/A</p> <!-- Added Difficulty Display -->
                 <div class="options">
                     <button class="option" onclick="selectAnswer(0)">Option 1</button>
                     <button class="option" onclick="selectAnswer(1)">Option 2</button>
@@ -40,6 +31,7 @@
 
     <footer>
         <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
+        <p>Questions are sourced from National Academic Quiz Tournaments, LLC.</p>
     </footer>
 
     <script src="script.js"></script>
