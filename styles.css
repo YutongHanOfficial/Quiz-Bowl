@@ -38,6 +38,55 @@ main {
     align-items: center;
 }
 
+/* Difficulty screen styling */
+.difficulty-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Difficulty selector styling */
+.difficulty-selector {
+    margin-top: 20px;
+}
+
+.difficulty-selector label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.difficulty-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+    filter: hue-rotate(20deg);
+}
+
 /* Quiz container styling */
 .quiz-container {
     background-color: #fff;
@@ -47,6 +96,7 @@ main {
     text-align: center;
     max-width: 600px;
     width: 100%;
+    display: none; /* Hidden by default */
 }
 
 /* Question text styling */
@@ -89,8 +139,6 @@ button.option:hover {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease, filter 0.3s ease;
-    display: block;
-    margin: 0 auto; /* Centering */
 }
 
 #next-btn:hover {
@@ -140,28 +188,4 @@ button.option.incorrect {
     .quiz-container {
         max-width: 500px;
     }
-}
-
-/* Centering the Next Question button */
-#next-btn {
-    display: block;
-    margin: 0 auto;
-}
-
-/* Existing styles */
-
-.difficulty-selector {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.difficulty-selector label {
-    font-size: 16px;
-}
-
-.difficulty-selector select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
