@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questionBox = document.getElementById('question');
+    const difficultyBox = document.getElementById('difficulty'); // New difficulty element
     const options = Array.from(document.querySelectorAll('.option'));
     const feedback = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Display the current question and shuffled answer options
+    // Display the current question, difficulty, and shuffled answer options
     function displayQuestion() {
         if (currentQuestionIndex >= questions.length) {
             questionBox.textContent = 'No more questions!';
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         questionBox.textContent = question.question;
+        difficultyBox.textContent = `Difficulty: ${question.difficulty}`; // Display difficulty
 
         // Select 3 random incorrect answers
         const incorrectAnswers = question.incorrect.slice();
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         options.forEach((option, index) => {
             option.textContent = allOptions[index];
             option.classList.remove('correct', 'incorrect'); // Remove color classes
-            option.dataset.correct = option.textContent === question.correct ? 'true' : 'false';
+            option.dataset.correct = option.textContent === question.correct;
             option.disabled = false; // Enable buttons again
         });
 
