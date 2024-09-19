@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         options.forEach((option, index) => {
             option.textContent = allOptions[index];
             option.classList.remove('correct', 'incorrect'); // Remove color classes
-            option.dataset.correct = option.textContent === question.correct;
+            option.dataset.correct = option.textContent === question.correct ? 'true' : 'false';
             option.disabled = false; // Enable buttons again
         });
 
