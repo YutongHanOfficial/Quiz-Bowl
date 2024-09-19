@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const difficultyScreen = document.getElementById('difficulty-screen');
     const quizContainer = document.getElementById('quiz-container');
     const questionBox = document.getElementById('question');
-    const options = Array.from(document.querySelectorAll('.option'));
+    const options = Array.from(document.querySelectorAll('.options .option'));
     const feedback = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
     // Load questions based on selected difficulty
-    function loadQuestions(difficulty) {
-        fetch(`questions/${difficulty}.json`)
+    function loadQuestions(difficultyFile) {
+        fetch(`questions/${difficultyFile}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok. Status: ${response.status}`);
@@ -109,15 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.selectAnswer = selectAnswer; // Make selectAnswer accessible from HTML
 
-    nextButton.addEventListener('click', () => {
+    // Handle next question
+    function nextQuestion() {
         currentQuestionIndex++;
         displayQuestion();
-    });
+    }
 
+    window.nextQuestion = nextQuestion; // Make nextQuestion accessible from HTML
+
+    // Handle difficulty button clicks
     difficultyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const difficulty = button.textContent.toLowerCase(); // Convert button text to lowercase
-            loadQuestions(difficulty); // Load questions based on the clicked difficulty
+            const difficultyFile = button.getAttribute('onclick').split("'")[1]; // Extract difficulty file name from onclick attribute
+            loadQuestions(difficultyFile); // Load questions based on the clicked difficulty
         });
     });
 });
