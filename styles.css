@@ -128,11 +128,16 @@ button.option:hover {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-    align-self: center;
 }
 
 #next-btn:hover {
     background-color: #007bb5;
+}
+
+/* Centering the Next Question button */
+#next-btn {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Feedback text */
