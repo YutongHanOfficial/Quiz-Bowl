@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questionBox = document.getElementById('question');
-    const difficultyBox = document.getElementById('difficulty'); // New difficulty element
     const options = Array.from(document.querySelectorAll('.option'));
     const feedback = document.getElementById('feedback');
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
+    const difficultySelect = document.getElementById('difficulty');
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -12,15 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalQuestionsAnswered = 0;
     let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
-    // Load questions from the JSON file
-    fetch('questions.json')
-        .then(response => response.json())
-        .then(data => {
-            questions = data;
-            shuffleArray(questions); // Shuffle questions
-            displayQuestion();
-        })
-        .catch(error => console.error('Error loading questions:', error));
+    // Load questions based on selected difficulty
+    function loadQuestions() {
+        const selectedDifficulty = difficultySelect.value;
+
+        fetch(`questions/${selectedDifficulty}`)
+            .then(response => response.json())
+            .then(data => {
+                questions = data;
+                shuffleArray(questions); // Shuffle questions
+                displayQuestion();
+            })
+            .catch(error => console.error('Error loading questions:', error));
+    }
 
     // Shuffle an array (Fisher-Yates algorithm)
     function shuffleArray(array) {
@@ -30,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Display the current question, difficulty, and shuffled answer options
+    // Display the current question and shuffled answer options
     function displayQuestion() {
         if (currentQuestionIndex >= questions.length) {
             questionBox.textContent = 'No more questions!';
@@ -41,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         questionBox.textContent = question.question;
-        difficultyBox.textContent = `Difficulty: ${question.difficulty}`; // Display difficulty
 
         // Select 3 random incorrect answers
         const incorrectAnswers = question.incorrect.slice();
@@ -103,4 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex++;
         displayQuestion();
     });
+
+    // Initial load of questions
+    loadQuestions(); // Load questions when the page is first loaded
 });
