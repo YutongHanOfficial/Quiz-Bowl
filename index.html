@@ -13,15 +13,24 @@
 
     <main>
         <div class="quiz-container">
+            <div class="difficulty-selector">
+                <label for="difficulty">Select Difficulty:</label>
+                <select id="difficulty" onchange="loadQuestions()">
+                    <option value="easy.json">Easy</option>
+                    <option value="medium.json">Medium</option>
+                    <option value="hard.json">Hard</option>
+                    <option value="expert.json">Expert</option>
+                </select>
+            </div>
+
             <div id="question-box">
                 <p id="question">Question will appear here</p>
-                <p id="difficulty">Difficulty: N/A</p> <!-- Added Difficulty Display -->
-                <div class="options">
-                    <button class="option" onclick="selectAnswer(0)">Option 1</button>
-                    <button class="option" onclick="selectAnswer(1)">Option 2</button>
-                    <button class="option" onclick="selectAnswer(2)">Option 3</button>
-                    <button class="option" onclick="selectAnswer(3)">Option 4</button>
-                </div>
+                <ul class="options">
+                    <li><button class="option" onclick="selectAnswer(0)">Option 1</button></li>
+                    <li><button class="option" onclick="selectAnswer(1)">Option 2</button></li>
+                    <li><button class="option" onclick="selectAnswer(2)">Option 3</button></li>
+                    <li><button class="option" onclick="selectAnswer(3)">Option 4</button></li>
+                </ul>
                 <div id="feedback"></div>
                 <button id="next-btn" onclick="nextQuestion()">Next Question</button>
             </div>
