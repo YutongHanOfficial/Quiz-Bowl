@@ -15,9 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
 
     // Load questions based on selected difficulty
-    function loadQuestions(fileName) {
-        fetch(`questions/${fileName}`)
-            .then(response => response.json())
+    function loadQuestions(difficulty) {
+        fetch(`questions/${difficulty}.json`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok. Status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 questions = data;
                 shuffleArray(questions); // Shuffle questions
@@ -111,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     difficultyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const difficulty = button.textContent.toLowerCase() + '.json'; // Get the file name based on button text
+            const difficulty = button.textContent.toLowerCase(); // Convert button text to lowercase
             loadQuestions(difficulty); // Load questions based on the clicked difficulty
         });
     });
