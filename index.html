@@ -14,15 +14,11 @@
     <main>
         <div id="difficulty-screen" class="difficulty-screen">
             <h2>Select Difficulty</h2>
-            <div class="difficulty-selector">
-                <label for="difficulty">Difficulty:</label>
-                <select id="difficulty">
-                    <option value="easy.json">Easy</option>
-                    <option value="medium.json">Medium</option>
-                    <option value="hard.json">Hard</option>
-                    <option value="expert.json">Expert</option>
-                </select>
-                <button id="start-btn">Start Quiz</button>
+            <div class="difficulty-buttons">
+                <button class="difficulty easy" data-difficulty="easy.json">Easy</button>
+                <button class="difficulty medium" data-difficulty="medium.json">Medium</button>
+                <button class="difficulty hard" data-difficulty="hard.json">Hard</button>
+                <button class="difficulty expert" data-difficulty="expert.json">Expert</button>
             </div>
         </div>
 
