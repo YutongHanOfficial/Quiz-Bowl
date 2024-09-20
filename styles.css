@@ -95,11 +95,11 @@ main {
 
 /* Ensure hover effects remain after marking correct/incorrect */
 button.option.correct:hover {
-    background-color: #78d478; /* Lighter green */
+    background-color: #78ee78; /* Lighter green */
 }
 
 button.option.incorrect:hover {
-    background-color: #ffaaaa; /* Lighter red */
+    background-color: #ffb4b3; /* Lighter red */
 }
 
 /* Quiz container styling */
