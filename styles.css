@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Remove bullets or list markers globally */
+ul, li {
+    list-style: none; /* Remove bullet points */
+}
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
