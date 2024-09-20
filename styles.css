@@ -36,7 +36,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Add padding to main content */
 }
 
 /* Difficulty screen styling */
@@ -71,11 +70,31 @@ main {
     color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Make buttons stretch to full width */
+    text-align: center; /* Center the text */
+    list-style-type: none; /* Remove any bullet points */
 }
 
+/* Ensure all buttons take up the full width and have consistent height */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Make the options container take full width */
+}
+
+/* Hover effect for all options */
 .option:hover {
     background-color: #e1e1e1;
-    filter: hue-rotate(20deg);
+}
+
+/* Ensure hover effects remain after marking correct/incorrect */
+button.option.correct:hover {
+    background-color: #78d478; /* Lighter green */
+}
+
+button.option.incorrect:hover {
+    background-color: #ffaaaa; /* Lighter red */
 }
 
 /* Quiz container styling */
@@ -102,6 +121,7 @@ main {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    width: 100%; /* Ensure the options container spans full width */
 }
 
 /* Option buttons styling */
@@ -113,34 +133,8 @@ button.option {
     color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button.option:hover {
-    background-color: #e1e1e1;
-    filter: hue-rotate(20deg);
-}
-
-/* Next question button styling */
-#next-btn {
-    padding: 10px 20px;
-    background-color: #008CBA;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-#next-btn:hover {
-    background-color: #007bb5;
-    filter: hue-rotate(20deg);
-}
-
-/* Centering the Next Question button */
-#next-btn {
-    display: block;
-    margin: 0 auto;
+    width: 100%; /* Ensure each option takes the full width */
+    text-align: center; /* Center text within the button */
 }
 
 /* Feedback text */
