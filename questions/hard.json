@@ -1,1 +1,7 @@
-
+[
+    {
+        "question": "This man contended that economic hypotheses do not need to be “realistic,” and rather, only need to make meaningful predictions in his namesake “twist.” This man responded to John Kenneth Galbraith with his personal statement Free to Choose. In a chapter entitled “The Great Contraction,” this economist and Anna Schwartz criticized the Federal Reserve for not acting as lender of last resort during the Great Depression. Alongside Edmund Phelps, this economist developed the notion of a “natural rate of unemployment.” This author of A Monetary History of the United States argued that economic freedom is a prerequisite for political freedom in another work. Name this author of Capitalism and Freedom who founded the Chicago school of economics. [SCUR_0001]",
+        "correct": "Milton Friedman",
+        "incorrect": ["John Maynard Keynes", "Karl Marx", "Adam Smith", "Amartya Sen", "Friedrich Hayek"]
+    }
+]
