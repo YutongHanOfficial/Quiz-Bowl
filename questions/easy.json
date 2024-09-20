@@ -1,1 +1,7 @@
-
+[
+    {
+        "question": "In a technique named for this quantity, atoms are ionized to separate them based on their ratio of this value and charge. For an atom, this quantity is measured with the unit amu. In stoichiometry, the number of moles of a substance equals this quantity divided by its “molar” variant. An element’s isotopes are labeled with their values for this quantity, which is calculated by summing an atom’s numbers of protons and neutrons. Name this quantity often measured in grams or kilograms. [MQBA_0001]",
+        "correct": "Mass",
+        "incorrect": ["Weight", "Volume", "Time", "Temperature", "Current"]
+    }
+]
