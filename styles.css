@@ -170,6 +170,31 @@ button.option.incorrect {
     font-weight: bold;
 }
 
+/* Styles for the Next Question button */
+#next-btn {
+    padding: 10px 20px; /* Adjust padding for proper button size */
+    background-color: #008CBA; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Button size matches the text length */
+    display: inline-block; /* Ensure the button is only as wide as needed */
+}
+
+/* Hover effect for Next Question button */
+#next-btn:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+
+/* Centering the Next Question button */
+#next-btn {
+    display: block;
+    margin: 20px auto; /* Center button horizontally */
+}
+
 /* Ensure quiz container is centered with proper margin on large screens */
 @media (min-width: 768px) {
     main {
