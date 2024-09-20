@@ -9,6 +9,14 @@ A website dedicated to helping **you** get better at Quiz Bowl.
   * 1 Easy
 * 96 Answer Choices
 
+## Difficulty Equivalents
+Compare difficulties with other resources.
+* <kbd>[High School Quizbowl Packet Archive](https://quizbowlpackets.com/)</kbd>
+  * Easy - Novice
+  * Medium - Regular
+  * Hard - Regular-Plus
+  * Expert - Nationals
+
 ## Question Codes
 * [NAQT]: National Academic Quiz Tournaments, LLC.
 * [MQBA]: Missouri Quizbowl Alliance (MOQBA)
