@@ -1,7 +1,7 @@
 # Quiz Bowl Practice
-**⚠️ Currently in Testing ⚠️**
-
 A website dedicated to helping **you** get better at Quiz Bowl.
+
+**⚠️Notice:** This website is currently in testing; all features including questions and design are subject to change at any time without prior notice.
 
 ## Current Stats
 * 15 Questions
