@@ -12,12 +12,10 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 * 110 Answer Choices
 
 ## Difficulty Equivalents
-Compare difficulties with other resources.
-* <kbd>[High School Quizbowl Packet Archive](https://quizbowlpackets.com/)</kbd>
-  * Easy - Novice
-  * Medium - Regular
-  * Hard - Regular-Plus
-  * Expert - Nationals
+* Easy - Middle School
+* Medium - High School JV
+* Hard - High School Varsity
+* Expert - Nationals
 
 ## Question Codes
 * [NAQT]: National Academic Quiz Tournaments, LLC.
