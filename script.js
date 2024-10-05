@@ -128,13 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dark Mode Implementation
     function setDarkMode(isDark) {
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'disabled');
-        }
+        const elements = [body, header, footer, difficultyScreen, quizContainer, nextButton, scoreTracker, ...options];
+        elements.forEach(element => {
+            if (isDark) {
+                element.classList.add('dark-mode');
+            } else {
+                element.classList.remove('dark-mode');
+            }
+        });
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     }
 
     // Load dark mode preference from localStorage
@@ -145,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle dark mode on button click
     darkModeToggle.addEventListener('click', () => {
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        setDarkMode(!isDarkMode); // Toggle dark mode
+        const isDarkMode = body.classList.contains('dark-mode');
+        setDarkMode(!isDarkMode);
     });
 });
