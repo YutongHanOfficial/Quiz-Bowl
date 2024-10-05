@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Remove 'index.html' from the URL if the current page is the homepage
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+        window.history.replaceState(null, '', window.location.origin + '/');
+    }
+
     const difficultyScreen = document.getElementById('difficulty-screen');
     const quizContainer = document.getElementById('quiz-container');
     const questionBox = document.getElementById('question');
