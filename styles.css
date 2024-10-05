@@ -232,6 +232,11 @@ button.option.incorrect {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* Hidden info */
+.hidden {
+    display: none;
+}
+
 /* Dark mode button styling */
 #dark-mode-toggle {
     background-color: #333;
