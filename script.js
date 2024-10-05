@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const scoreTracker = document.getElementById('score-tracker');
     const difficultyButtons = document.querySelectorAll('.difficulty-buttons button');
     const darkModeToggle = document.getElementById('dark-mode-toggle'); // Dark mode toggle button
+    // Passcode
+    const submitButton = document.getElementById('submit-passcode');
+    const passcodeInput = document.getElementById('passcode');
+    const quizInfo = document.getElementById('quiz-info');
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -123,6 +127,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const difficultyFile = button.getAttribute('onclick').split("'")[1];
             loadQuestions(difficultyFile);
         });
+    });
+
+    // Event listener for passcode submission
+    submitButton.addEventListener('click', () => {
+        const passcode = passcodeInput.value.trim();
+        if (passcode === "testpasscode1") {
+            quizInfo.classList.remove('hidden'); // Show Quiz Bowl info
+        } else {
+            alert("Incorrect passcode. Please try again.");
+        }
     });
 
     // Dark Mode Implementation
