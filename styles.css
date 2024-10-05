@@ -232,6 +232,36 @@ button.option.incorrect {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* About page styling */
+.about-container {
+    max-width: 600px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    background-color: #fff; /* White background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-container h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.about-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-container ul {
+    margin-bottom: 15px;
+}
+
 /* Dark mode button styling (reverted) */
 #dark-mode-toggle {
     background-color: #333;
