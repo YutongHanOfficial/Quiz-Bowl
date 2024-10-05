@@ -232,38 +232,68 @@ button.option.incorrect {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Dark Mode Styles */
+/* General Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
-    color: #e0e0e0;
+    color: white;
 }
 
 header.dark-mode, footer.dark-mode {
-    background-color: #222;
+    background-color: #1c1c1c;
 }
 
-button.option.dark-mode {
+header.dark-mode a, footer.dark-mode a {
+    color: white;
+}
+
+button.dark-mode {
     background-color: #333;
     color: white;
+    border: 1px solid #fff;
+}
+
+button.dark-mode:hover {
+    background-color: #444;
+}
+
+.difficulty-screen.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.quiz-container.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.option.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+button.option.correct.dark-mode {
+    background-color: #4caf50; /* Correct - dark green */
+}
+
+button.option.incorrect.dark-mode {
+    background-color: #f44336; /* Incorrect - dark red */
 }
 
 #next-btn.dark-mode {
-    background-color: #555;
-}
-
-/* Dark mode button styling */
-#dark-mode-toggle {
-    background-color: #333;
+    background-color: #006f9a; /* Darker blue */
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    right: 20px;
-    top: 20px;
 }
 
-#dark-mode-toggle:hover {
+#feedback.dark-mode {
+    color: white;
+}
+
+/* Dark mode styling for score tracker */
+#score-tracker.dark-mode {
+    color: white;
+}
+
+/* Additional elements (like hover effects) in dark mode */
+button.dark-mode:hover {
     background-color: #444;
 }
