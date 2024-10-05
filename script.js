@@ -131,8 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(element => {
             if (isDark) {
                 element.classList.add('dark-mode');
+                darkModeToggle.textContent = '☀️ Light Mode'; // Change button text for light mode
             } else {
                 element.classList.remove('dark-mode');
+                darkModeToggle.textContent = '🌙 Dark Mode'; // Change button text for dark mode
             }
         });
         localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
