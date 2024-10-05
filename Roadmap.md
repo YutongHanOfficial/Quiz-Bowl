@@ -7,5 +7,5 @@ The full development roadmap for Quiz Bowl Practice.
 - [ ] Modes (Review, Quiz, etc.)
 
 ## Design
-- [ ] Dark mode
+- [x] Dark mode - October 5, 2024 (Unstable Release)
 - [ ] Accessibility
