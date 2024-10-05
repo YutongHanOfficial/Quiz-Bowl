@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB</title>
+    <link rel="icon" type="image/png" href="/images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: white; text-decoration: none;">Quiz Bowl Practice</a></h1>
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="about" style="color: white; text-decoration: none;">About</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section class="difficulty-screen" id="difficulty-screen">
+            <h2>GB Login</h2>
+            <h3>What is the passcode?</h3>
+            <input type="password" id="passcode" placeholder="Enter passcode" />
+            <button id="submit-passcode">Submit</button>
+            <div id="quiz-info" class="hidden">
+                <h3>Grand Blanc High School Quiz Bowl Season</h3>
+                <p>Latest Games: Game A vs Game B, Game C vs Game D</p>
+                <p>Upcoming Schedule: October 10, October 17, October 24</p>
+                <p>Scores: Game A: 120, Game B: 100; Game C: 130, Game D: 110</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
+        <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
