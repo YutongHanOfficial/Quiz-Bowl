@@ -138,11 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     }
 
+    // Retrieve dark mode preference from localStorage on page load
     const darkModePreference = localStorage.getItem('darkMode');
     if (darkModePreference === 'enabled') {
         setDarkMode(true);
     }
 
+    // Toggle dark mode and save preference
     darkModeToggle.addEventListener('click', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         setDarkMode(!isDarkMode);
