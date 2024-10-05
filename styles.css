@@ -232,7 +232,7 @@ button.option.incorrect {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Dark mode button styling (reverted) */
+/* Dark mode button styling */
 #dark-mode-toggle {
     background-color: #333;
     color: white;
