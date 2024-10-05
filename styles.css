@@ -232,6 +232,23 @@ button.option.incorrect {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* Dark mode button styling (reverted) */
+#dark-mode-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Ensure it's aligned */
+    right: 20px;        /* Position 20px from the right */
+    top: 20px;          /* Position 20px from the top */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #444; /* Darker on hover */
+}
+
 /* General Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
