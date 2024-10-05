@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit-passcode');
     const passcodeInput = document.getElementById('passcode');
     const quizInfo = document.getElementById('quiz-info');
+    const loginForm = document.getElementById('login-form');
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -132,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for passcode submission
     submitButton.addEventListener('click', () => {
         const passcode = passcodeInput.value.trim();
-        if (passcode === "testpasscode1") {
-            loginForm.classList.add('hidden'); // Hide the login form
+        if (passcode === "testpasscode1") { // Replace this with your actual passcode
+            loginForm.style.display = 'none'; // Hide the login form
             quizInfo.classList.remove('hidden'); // Show Quiz Bowl info
         } else {
             alert("Incorrect passcode. Please try again.");
