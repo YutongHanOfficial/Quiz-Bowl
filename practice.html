@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: white; text-decoration: none;">Quiz Bowl Practice</a></h1>
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="practice" style="color: white; text-decoration: none;">Practice</a></li>
+                <li><a href="about" style="color: white; text-decoration: none;">About</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Difficulty Selection Screen -->
+        <section id="difficulty-screen" class="difficulty-screen">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty-buttons">
+                <button class="option" onclick="selectDifficulty('easy.json')">Easy</button>
+                <button class="option" onclick="selectDifficulty('medium.json')">Medium</button>
+                <button class="option" onclick="selectDifficulty('hard.json')">Hard</button>
+                <button class="option" onclick="selectDifficulty('expert.json')">Expert</button>
+            </div>
+        </section>
+
+        <!-- Quiz Container -->
+        <section id="quiz-container" class="quiz-container" style="display: none;">
+            <div id="question-box">
+                <p id="question">Question will appear here</p>
+                <ul class="options">
+                    <li><button class="option" onclick="selectAnswer(0)">Option 1</button></li>
+                    <li><button class="option" onclick="selectAnswer(1)">Option 2</button></li>
+                    <li><button class="option" onclick="selectAnswer(2)">Option 3</button></li>
+                    <li><button class="option" onclick="selectAnswer(3)">Option 4</button></li>
+                </ul>
+                <div id="feedback" aria-live="polite"></div>
+                <button id="next-btn" class="option" onclick="nextQuestion()">Next Question</button>
+            </div>
+            <div id="score-tracker">Score: 0 / 0</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
+        <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
