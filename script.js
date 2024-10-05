@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
     const difficultyButtons = document.querySelectorAll('.difficulty-buttons button');
-    const darkModeToggle = document.getElementById('dark-mode-toggle'); // Add the dark mode toggle button
+    const darkModeToggle = document.getElementById('dark-mode-toggle'); // Dark mode toggle button
 
     let questions = [];
     let currentQuestionIndex = 0;
     let score = 0;
     let totalQuestionsAnswered = 0;
-    let isAnswered = false; // To prevent selecting multiple options before clicking "Next"
+    let isAnswered = false;
 
     // Load questions based on selected difficulty
     function loadQuestions(difficultyFile) {
@@ -65,19 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         options.forEach((option, index) => {
             option.textContent = allOptions[index];
-            option.classList.remove('correct', 'incorrect'); // Remove color classes
+            option.classList.remove('correct', 'incorrect');
             option.dataset.correct = option.textContent === question.correct;
-            option.disabled = false; // Enable buttons again
+            option.disabled = false;
         });
 
         feedback.textContent = '';
         isAnswered = false;
-        nextButton.style.display = 'none'; // Hide the "Next Question" button until an answer is chosen
+        nextButton.style.display = 'none';
     }
 
     // Handle answer selection
     function selectAnswer(index) {
-        if (isAnswered) return; // Prevent multiple answers being selected before clicking next
+        if (isAnswered) return;
 
         const selectedOption = options[index];
         const isCorrect = selectedOption.dataset.correct === 'true';
@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             feedback.className = 'incorrect';
             selectedOption.classList.add('incorrect');
             
-            // Highlight the correct answer in green
             options.forEach(option => {
                 if (option.dataset.correct === 'true') {
                     option.classList.add('correct');
@@ -103,12 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
         totalQuestionsAnswered++;
         scoreTracker.textContent = `Score: ${score} / ${totalQuestionsAnswered}`;
 
-        options.forEach(option => option.disabled = true); // Disable buttons after selecting an answer
-        nextButton.style.display = 'block'; // Show the "Next Question" button
-        isAnswered = true; // Mark question as answered
+        options.forEach(option => option.disabled = true);
+        nextButton.style.display = 'block';
+        isAnswered = true;
     }
 
-    window.selectAnswer = selectAnswer; // Make selectAnswer accessible from HTML
+    window.selectAnswer = selectAnswer;
 
     // Handle next question
     function nextQuestion() {
@@ -116,19 +115,19 @@ document.addEventListener('DOMContentLoaded', () => {
         displayQuestion();
     }
 
-    window.nextQuestion = nextQuestion; // Make nextQuestion accessible from HTML
+    window.nextQuestion = nextQuestion;
 
     // Handle difficulty button clicks
     difficultyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const difficultyFile = button.getAttribute('onclick').split("'")[1]; // Extract difficulty file name from onclick attribute
-            loadQuestions(difficultyFile); // Load questions based on the clicked difficulty
+            const difficultyFile = button.getAttribute('onclick').split("'")[1];
+            loadQuestions(difficultyFile);
         });
     });
 
     // Dark Mode Implementation
     function setDarkMode(isDark) {
-        const elements = [body, header, footer, difficultyScreen, quizContainer, nextButton, scoreTracker, ...options];
+        const elements = [document.body, difficultyScreen, quizContainer, nextButton];
         elements.forEach(element => {
             if (isDark) {
                 element.classList.add('dark-mode');
@@ -139,15 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     }
 
-    // Load dark mode preference from localStorage
     const darkModePreference = localStorage.getItem('darkMode');
     if (darkModePreference === 'enabled') {
         setDarkMode(true);
     }
 
-    // Toggle dark mode on button click
     darkModeToggle.addEventListener('click', () => {
-        const isDarkMode = body.classList.contains('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
         setDarkMode(!isDarkMode);
     });
 });
