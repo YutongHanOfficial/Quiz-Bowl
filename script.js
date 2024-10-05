@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.getElementById('next-btn');
     const scoreTracker = document.getElementById('score-tracker');
     const difficultyButtons = document.querySelectorAll('.difficulty-buttons button');
+    const darkModeToggle = document.getElementById('dark-mode-toggle'); // Add the dark mode toggle button
 
     let questions = [];
     let currentQuestionIndex = 0;
@@ -123,5 +124,28 @@ document.addEventListener('DOMContentLoaded', () => {
             const difficultyFile = button.getAttribute('onclick').split("'")[1]; // Extract difficulty file name from onclick attribute
             loadQuestions(difficultyFile); // Load questions based on the clicked difficulty
         });
+    });
+
+    // Dark Mode Implementation
+    function setDarkMode(isDark) {
+        if (isDark) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    }
+
+    // Load dark mode preference from localStorage
+    const darkModePreference = localStorage.getItem('darkMode');
+    if (darkModePreference === 'enabled') {
+        setDarkMode(true);
+    }
+
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('click', () => {
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        setDarkMode(!isDarkMode); // Toggle dark mode
     });
 });
