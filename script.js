@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dark Mode Implementation
     function setDarkMode(isDark) {
-        const elements = [document.body, difficultyScreen, quizContainer, nextButton];
+        const elements = [document.body, document.querySelector('.difficulty-screen')];
         elements.forEach(element => {
             if (isDark) {
                 element.classList.add('dark-mode');
@@ -137,14 +137,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     }
-
+    
     // Retrieve dark mode preference from localStorage on page load
     const darkModePreference = localStorage.getItem('darkMode');
     if (darkModePreference === 'enabled') {
         setDarkMode(true);
     }
-
+    
     // Toggle dark mode and save preference
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
     darkModeToggle.addEventListener('click', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         setDarkMode(!isDarkMode);
