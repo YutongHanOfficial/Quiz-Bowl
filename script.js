@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for passcode submission
     submitButton.addEventListener('click', () => {
         const passcode = passcodeInput.value.trim();
-        if (passcode === "testpasscode1") { // Replace this with your actual passcode
+        if (passcode === "clark") {
             loginForm.style.display = 'none'; // Hide the login form
             quizInfo.classList.remove('hidden'); // Show Quiz Bowl info
         } else {
