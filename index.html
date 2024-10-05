@@ -16,11 +16,12 @@
                 <li><a href="about" style="color: white; text-decoration: none;">About</a></li>
             </ul>
         </nav>
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
     </header>
 
     <main>
-        <div id="difficulty-screen" class="difficulty-screen">
+        <!-- Difficulty Selection Screen -->
+        <section id="difficulty-screen" class="difficulty-screen">
             <h2>Select Difficulty</h2>
             <div class="difficulty-buttons">
                 <button class="option" onclick="selectDifficulty('easy.json')">Easy</button>
@@ -28,9 +29,10 @@
                 <button class="option" onclick="selectDifficulty('hard.json')">Hard</button>
                 <button class="option" onclick="selectDifficulty('expert.json')">Expert</button>
             </div>
-        </div>
+        </section>
 
-        <div id="quiz-container" class="quiz-container" style="display: none;">
+        <!-- Quiz Container -->
+        <section id="quiz-container" class="quiz-container" style="display: none;">
             <div id="question-box">
                 <p id="question">Question will appear here</p>
                 <ul class="options">
@@ -39,11 +41,11 @@
                     <li><button class="option" onclick="selectAnswer(2)">Option 3</button></li>
                     <li><button class="option" onclick="selectAnswer(3)">Option 4</button></li>
                 </ul>
-                <div id="feedback"></div>
+                <div id="feedback" aria-live="polite"></div>
                 <button id="next-btn" class="option" onclick="nextQuestion()">Next Question</button>
             </div>
             <div id="score-tracker">Score: 0 / 0</div>
-        </div>
+        </section>
     </main>
 
     <footer>
