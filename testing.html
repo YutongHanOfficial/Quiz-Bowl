@@ -16,6 +16,9 @@
     
       gtag('config', 'G-3DBSW1VJB5');
     </script>
+
+    <!-- Add Socket.IO client-side script -->
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
     <header>
@@ -36,15 +39,27 @@
     <noscript>
         <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=xqge2nqxjah3uc3sh38d7uwqlxsqmj79" border="0" title="hit counter" alt="hit counter">
     </noscript>
-    
-    <!-- Add stuff here -->
 
+    <!-- Add stuff here -->
+    
     <footer>
         <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
         <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
     </footer>
-    
-    <!-- <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CMmI9bPsfkwSk08VKiaBLW7HAgPLYFVjSEApgXYv5uw&cl=ffffff&w=a" style="display: none;"></script> -->
-    <script src="script.js"></script>
+
+    <script>
+        // Connect to the server
+        var socket = io();
+
+        // Listen for a new message
+        socket.on('new message', function(data) {
+            console.log(data.username + ": " + data.message);
+        });
+
+        // Send a new message
+        function sendMessage(msg) {
+            socket.emit('new message', msg);
+        }
+    </script>
 </body>
 </html>
