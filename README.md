@@ -31,11 +31,18 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 
 ## Version
 <details>
-<summary>Version 0.1.1</summary>
+<summary>Version 0.1.2 (October 7, 2024)</summary>
+0.1.2 (Beta 0, Build 1, Release 2)
+
+* Added analytics
+</details>
+
+<details>
+<summary>Version 0.1.1 (October 5, 2024)</summary>
 0.1.1 (Beta 0, Build 1, Release 1)
 
-* Add dark mode (unstable release)
-* Add GB portal
+* Added dark mode (unstable release)
+* Added GB portal
 </details>
 
 ## Legal
