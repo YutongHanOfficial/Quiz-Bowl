@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Passcode
     const submitButton = document.getElementById('submit-passcode');
     const passcodeInput = document.getElementById('passcode');
-    const quizInfo = document.getElementById('quiz-info');
+    const 2024season = document.getElementById('2024-season');
+    const 2023season = document.getElementById('2023-season');
     const loginForm = document.getElementById('login-form');
 
     let questions = [];
@@ -134,8 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     submitButton.addEventListener('click', () => {
         const passcode = passcodeInput.value.trim();
         if (passcode === "clark") {
-            loginForm.style.display = 'none'; // Hide the login form
-            quizInfo.classList.remove('hidden'); // Show Quiz Bowl info
+            2024season.classList.remove('hidden'); // Show 2024 season
+            2023season.classList.remove('hidden'); // Show 2023 season
         } else {
             alert("Incorrect passcode. Please try again.");
         }
