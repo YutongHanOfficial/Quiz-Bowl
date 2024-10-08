@@ -6,10 +6,10 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 ## Current Stats
 * 15 Questions
   * 12 Expert
-  * 1 Hard
-  * 1 Medium
+  * 2 Hard
+  * 2 Medium
   * 2 Easy
-* 117 Answer Choices
+* 131 Answer Choices
 
 ## Difficulty Equivalents
 * Easy - Middle School
@@ -25,9 +25,9 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 
 ## Question Sources
 * [NAQT_0001-0012]: <kbd>[2022 High School National Championship Tournament Packet 1](https://www.naqt.com/samples/hsnct.pdf)</kbd>
-* [MQBA_0001]: <kbd>[2023 MOQBA Novice II Packet 1](https://files.quizbowlpackets.com/2986/MOQBA%20Novice%20II%20Packet%2001.pdf)</kbd>
-* [SCUR_0001]: <kbd>[2023 SCURVY Packet 1](https://files.quizbowlpackets.com/3115/SCURVY%20Packet%201-1.pdf)</kbd>
-* [CARD_0001]: <kbd>[CARD I Packet 1](https://files.quizbowlpackets.com/3064/Packet%201.docx)</kbd>
+* [MQBA_0001-0002]: <kbd>[2023 MOQBA Novice II Packet 1](https://files.quizbowlpackets.com/2986/MOQBA%20Novice%20II%20Packet%2001.pdf)</kbd>
+* [SCUR_0001-0002]: <kbd>[2023 SCURVY Packet 1](https://files.quizbowlpackets.com/3115/SCURVY%20Packet%201-1.pdf)</kbd>
+* [CARD_0001-0002]: <kbd>[CARD I Packet 1](https://files.quizbowlpackets.com/3064/Packet%201.docx)</kbd>
 
 ## Version
 <!-- v0.1.2 -->
