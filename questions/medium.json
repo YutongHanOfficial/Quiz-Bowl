@@ -3,5 +3,10 @@
         "question": "A character in this novel is attacked and breaks his arm while returning from a Halloween pageant. In this novel, the protagonist reads to Mrs. Dubose before she dies. A character nicknamed “one shot” kills a rabid dog in this novel in which string, gum, and pennies are left in a tree and found by Jem. In this novel, Bob Ewell beats his daughter and frames Tom Robinson, who is defended in court by Atticus. In what Harper Lee novel is Boo Radley investigated by Scout Finch? [CARD_0001]",
         "correct": "To Kill a Mockingbird",
         "incorrect": ["Romeo and Juliet", "The Great Gatsby", "Lord of the Flies", "Of Mice and Men", "The Odyssey", "Night", "Brave New World"]
+    },
+    {
+        "question": "People given this title include Thomas van der Trave. Name this title earned by Joseph Knecht. This title is Latin for “Master of the Game.” [CARD_0002]",
+        "correct": "Magister Ludi",
+        "incorrect": ["Magister Artis", "Magister Gloriae", "Magister Regiminis", "Magister Studiorum", "Magister Populi", "Magister Cohors", "Magister Multitudinis"]
     }
 ]
