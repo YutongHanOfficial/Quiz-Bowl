@@ -8,5 +8,10 @@
     "question": "Which of these countries do not border China?",
     "correct": "Uzbekistan",
     "incorrect": ["North Korea", "Russia", "Mongolia", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Pakistan", "India", "Nepal", "Bhutan", "Myanmar", "Laos", "Vietnam"]
+  },
+  {
+    "question": "How many adverbs are in the following quote by Maya Angelou, “Hoping for the best, prepared for the worst, and unsurprised by anything in between.“",
+    "correct": "0",
+    "incorrect": ["1", "2", "3", "4", "5"]
   }
 ]
