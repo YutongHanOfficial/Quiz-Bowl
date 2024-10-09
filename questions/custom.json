@@ -23,5 +23,15 @@
     "question": "In what century did the United States gain independence?",
     "correct": "18th Century",
     "incorrect": ["15th Century", "16th Century", "17th Century", "19th Century"]
+  },
+  {
+    "question": "Which of these is not a typical symptom of the bubonic plague?",
+    "correct": "Coughing",
+    "incorrect": ["Buboes", "Fever", "Headache", "Chills", "Weakness", "Vomiting", "Diarrhea", "Nausea"]
+  },
+  {
+    "question": "Which of these is not a motto of a U.S. state?",
+    "correct": "A Mari Usque Ad Mare",
+    "incorrect": ["Audemus jura nostra defender", "North to the Future", "Ditat Deus", "Regnat Populus", "Eureka", "Nil Sine Numine", "Qui Transtulit Sustinet", "Liberty and Independence", "In God We Trust", "Wisdom, Justice, Moderation", "Ua Mau ke Ea o ka ‘Āina i ka Pono", "Esto Perpetua", "State Sovereignty, National Union.", "The Crossroads of America", "Our liberties we prize, and our rights we will maintain."]
   }
 ]
