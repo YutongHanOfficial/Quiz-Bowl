@@ -19,4 +19,9 @@
     "correct": "6",
     "incorrect": ["0", "1", "2", "3", "4", "5", "7", "8", "9"]
   },
+  {
+    "question": "In what century did the United States gain independence?",
+    "correct": "18th Century",
+    "incorrect": ["15th Century", "16th Century", "17th Century", "19th Century"]
+  }
 ]
