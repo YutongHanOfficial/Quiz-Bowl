@@ -13,5 +13,10 @@
     "question": "How many adverbs are in the following quote by Maya Angelou, “Hoping for the best, prepared for the worst, and unsurprised by anything in between.“",
     "correct": "0",
     "incorrect": ["1", "2", "3", "4", "5"]
-  }
+  },
+  {
+    "question": "What is the third digit of pi squared?",
+    "correct": "6",
+    "incorrect": ["0", "1", "2", "3", "4", "5", "7", "8", "9"]
+  },
 ]
