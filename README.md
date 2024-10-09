@@ -4,7 +4,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 **⚠️Notice:** This website is currently in testing; all features including questions and design are subject to change at any time without prior notice.
 
 ## Current Stats
-* 15 Questions
+* 18 Questions
   * 12 Expert
   * 2 Hard
   * 2 Medium
@@ -30,6 +30,14 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 * [CARD_0001-0002]: <kbd>[CARD I Packet 1](https://files.quizbowlpackets.com/3064/Packet%201.docx)</kbd>
 
 ## Version
+<!-- v0.1.3 -->
+<details>
+<summary>Version 0.1.3 (October 8, 2024)</summary>
+0.1.3 (Beta 0, Build 1, Release 3)
+
+* Added 3 questions
+* Added 21 answer choices
+</details>
 <!-- v0.1.2 -->
 <details>
 <summary>Version 0.1.2 (October 6, 2024)</summary>
