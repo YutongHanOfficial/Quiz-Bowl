@@ -9,8 +9,8 @@ A website dedicated to helping **you** get better at Quiz Bowl.
   * 2 Hard
   * 2 Medium
   * 2 Easy
-  * 2 Custom
-* 152 Answer Choices
+  * 4 Custom
+* 168 Answer Choices
 
 ## Difficulty Equivalents
 * Easy - Middle School
