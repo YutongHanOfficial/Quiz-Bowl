@@ -83,5 +83,20 @@
     "question": "The Ivy League contains eight globally-renowned universities associated with academic excellence. Which Ivy League school was originally established as the Collegiate School?",
     "correct": "Yale University",
     "incorrect": ["Harvard University", "Princeton University", "University of Pennsylvania", "Dartmouth College", "Cornell University", "Columbia University", "Brown University"]
+  },
+  {
+    "question": "The Mississippi River is the second longest river in North America only behind one of its tributaries, the Missouri River. Which U.S. state is the largest by total area (land and water) entirely east of the Mississippi?",
+    "correct": "Michigan",
+    "incorrect": ["Florida", "Wisconsin", "Georgia", "Illinois", "New York", "North Carolina"]
+  },
+  {
+    "question": "This U.S. president earned the nickname “Old Tippecanoe“ after leading a military force against Tecumseh's confederacy at the Battle of Tippecanoe.",
+    "correct": "William Henry Harrison",
+    "incorrect": ["Andrew Jackson", "Zachary Taylor", "Franklin Pierce", "Andrew Johnson", "Ulysses S. Grant", "Rutherford B. Hayes", "James A. Garfield"]
+  },
+  {
+    "question": "This tropical cyclone at its peak intensity was the largest tropical cyclone on record with a wind diameter of 1,380 mi (2,220 km) and had the lowest sea-level pressure ever at 870 mbar (25.69 inHg).",
+    "correct": "Typhoon Tip",
+    "incorrect": ["Hurricane Katrina", "Hurricane Patricia", "Cyclone Winston", "Bhola Cyclone", "Typhoon Nancy"]
   }
 ]
