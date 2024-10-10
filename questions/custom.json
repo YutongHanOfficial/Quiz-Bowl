@@ -1,11 +1,11 @@
 [
   {
-    "question": "How can the year 2024 be displayed in Roman numerals?",
+    "question": "In the Roman numeral system, letters represent numbers. How is the year 2024 represented in Roman numerals?",
     "correct": "MMXXIV",
     "incorrect": ["MMXXVI", "MMXLII", "MLXVI", "MMXXXII", "MMXVI"]
   },
   {
-    "question": "Which of these countries do not border China?",
+    "question": "China and Russia border the most nations (14). Which of these countries do not border China?",
     "correct": "Uzbekistan",
     "incorrect": ["North Korea", "Russia", "Mongolia", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Pakistan", "India", "Nepal", "Bhutan", "Myanmar", "Laos", "Vietnam"]
   },
@@ -15,28 +15,38 @@
     "incorrect": ["1", "2", "3", "4", "5"]
   },
   {
-    "question": "What is the third digit of pi squared?",
+    "question": "Pi is an irrational number with an infinite sequence of digits. What is the third digit of pi squared?",
     "correct": "6",
     "incorrect": ["0", "1", "2", "3", "4", "5", "7", "8", "9"]
   },
   {
-    "question": "In what century did the United States gain independence?",
+    "question": "In which century did the United States gain independence from the Kingdom of Great Britain?",
     "correct": "18th Century",
     "incorrect": ["15th Century", "16th Century", "17th Century", "19th Century"]
   },
   {
-    "question": "Which of these is not a typical symptom of the bubonic plague?",
+    "question": "The bubonic plague can cause severe and deadly symptoms. However, which of these is not a typical symptom of the bubonic plague?",
     "correct": "Coughing",
     "incorrect": ["Buboes", "Fever", "Headache", "Chills", "Weakness", "Vomiting", "Diarrhea", "Nausea"]
   },
   {
-    "question": "Which of these is not a motto of a U.S. state?",
+    "question": "Every U.S. state has a motto representing its values or ideals. Which of these is not a motto of any U.S. state?",
     "correct": "A Mari Usque Ad Mare",
     "incorrect": ["Audemus jura nostra defender", "North to the Future", "Ditat Deus", "Regnat Populus", "Eureka", "Nil Sine Numine", "Qui Transtulit Sustinet", "Liberty and Independence", "In God We Trust", "Wisdom, Justice, Moderation", "Ua Mau ke Ea o ka ‘Āina i ka Pono", "Esto Perpetua", "State Sovereignty, National Union.", "The Crossroads of America", "Our liberties we prize, and our rights we will maintain."]
   },
   {
-    "question": "Which of these cities is not located in European Russia?",
+    "question": "Russia is divided between Europe and Asia, and many of its major cities lie in the European part. Which of these cities is not located in European Russia?",
     "correct": "Novosibirsk",
     "incorrect": ["Moscow", "Saint Petersburg", "Kazan", "Nizhny Novgorod", "Ufa", "Samara", "Rostov-on-Don", "Krasnodar", "Voronezh", "Perm", "Volgograd"]
+  },
+  {
+    "question": "The president of the United States is both the head of state and head of government. If the date was January 1, 2021, how many U.S. presidents would there have been in history?",
+    "correct": "45",
+    "incorrect": ["40", "41", "42", "43", "44", "46"]
+  },
+  {
+    "question": "A figure of speech is a creative way of using language to convey meaning. What figure of speech is present in the sentence “Winning that championship quiz bowl match wasn’t an easy task“?",
+    "correct": "Litotes",
+    "incorrect": ["Simile", "Personification", "Alliteration", "Onomatopoeia", "Oxymoron", "Pun", "Synecdoche"]
   }
 ]
