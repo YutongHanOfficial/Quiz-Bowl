@@ -9,7 +9,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
   * 2 Hard
   * 2 Medium
   * 2 Easy
-  * 10 Custom
+  * 12 Custom
 
 ## Difficulty Equivalents
 * Easy - Middle School
@@ -35,7 +35,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 <summary>Version 0.1.4 (October 9, 2024)</summary>
 0.1.4 (Beta 0, Build 1, Release 4)
 
-* Added 8 custom questions
+* Added 10 custom questions
 </details>
 <!-- v0.1.3 -->
 <details>
