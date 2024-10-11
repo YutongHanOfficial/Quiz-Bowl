@@ -108,5 +108,10 @@
     "question": "Marie Curie was a physicist and chemist known for her groundbreaking research on radioactivity and was the first person to have won two Nobel Prizes. What is the name of her husband with whom she shared the 1903 Nobel Prize in Physics?",
     "correct": "Pierre",
     "incorrect": ["Paul", "Louis", "Jean", "Joseph", "Henri", "Charles", "Albert"]
+  },
+  {
+    "question": "By 1860, many world borders had become generally recognizable to modern-day borders. Which of these countries did not exist in the year 1860?",
+    "correct": "Mughal Empire",
+    "incorrect": ["United States of America", "Great Qing", "Russian Empire", "Tokugawa Shogunate", "United Kingdom of Great Britain and Ireland", "Guarded Domains of Iran", "Empire of Brazil", "Great Joseon State", "Ottoman Empire"]
   }
 ]
