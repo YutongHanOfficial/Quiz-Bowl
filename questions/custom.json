@@ -113,5 +113,15 @@
     "question": "By 1860, many world borders had become generally recognizable to modern-day borders. Which of these countries did not exist in the year 1860?",
     "correct": "Mughal Empire",
     "incorrect": ["United States of America", "Great Qing", "Russian Empire", "Tokugawa Shogunate", "United Kingdom of Great Britain and Ireland", "Guarded Domains of Iran", "Empire of Brazil", "Great Joseon State", "Ottoman Empire"]
+  },
+  {
+    "question": "This pharaoh was the third of the 18th Dynasty of Egypt known for defeating the Kingdom of Kush and destroying Kerma in Nubia.",
+    "correct": "Thutmose I",
+    "incorrect": ["Tutankhamun", "Ramesses II", "Amenhotep I", "Cleopatra VII", "Khufu", "Amenhotep III", "Thutmose III"]
+  },
+  {
+    "question": "In Sikhism, the Five Ks are items that Guru Gobind Singh in 1699 commanded Khalsa Sikhs to wear at all times. Which is not one of the five items?",
+    "correct": "Kamarkasa",
+    "incorrect": ["Kesh", "Kangha", "Kara", "Kachera", "Kirpan"]
   }
 ]
