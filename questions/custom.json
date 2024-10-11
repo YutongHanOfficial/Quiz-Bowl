@@ -98,5 +98,15 @@
     "question": "This tropical cyclone at its peak intensity was the largest tropical cyclone on record with a wind diameter of 1,380 mi (2,220 km) and had the lowest sea-level pressure ever at 870 mbar (25.69 inHg).",
     "correct": "Typhoon Tip",
     "incorrect": ["Hurricane Katrina", "Hurricane Patricia", "Cyclone Winston", "Bhola Cyclone", "Typhoon Nancy"]
+  },
+  {
+    "question": "This violinist is often considered one of the greatest of all time was awarded the Presidential Medal of Freedom and has won 16 Grammy Awards.",
+    "correct": "Itzhak Perlman",
+    "incorrect": ["Hilary Hahn", "Joshua Bell", "Nicola Benedetti", "Jascha Heifetz", "Yehudi Menuhin"]
+  },
+  {
+    "question": "Marie Curie was a physicist and chemist known for her groundbreaking research on radioactivity and was the first person to have won two Nobel Prizes. What is the name of her husband with whom she shared the 1903 Nobel Prize in Physics?",
+    "correct": "Pierre",
+    "incorrect": ["Paul", "Louis", "Jean", "Joseph", "Henri", "Charles", "Albert"]
   }
 ]
