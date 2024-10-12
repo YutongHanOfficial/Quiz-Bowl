@@ -35,7 +35,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 <summary>Version 0.1.6 (October 11, 2024)</summary>
 0.1.6 (Beta 0, Build 1, Release 6)
 
-* Added 3 custom questions
+* Added 6 custom questions
 </details>
 <!-- v0.1.5 -->
 <details>
