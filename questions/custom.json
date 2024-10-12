@@ -128,5 +128,15 @@
     "question": "This author, known for exploring existential themes, wrote a novel where the protagonist murders his invalid wife by drowning her in a lake. His other works include The Fall and The Plague. Name this author of The Stranger, a key figure in absurdism.",
     "correct": "Albert Camus",
     "incorrect": ["Fyodor Dostoevsky", "Franz Kafka", "Jean-Paul Sartre", "Samuel Beckett", "Eugène Ionesco", "Saul Bellow"]
+  },
+  {
+    "question": "This singer-songwriter began her career as a country artist after signing with Big Machine Records at age 15. Name this artist, who later became a global pop star.",
+    "correct": "Taylor Swift",
+    "incorrect": ["Carrie Underwood", "Tanya Tucker", "Dolly Parton", "Miley Cyrus"]
+  },
+  {
+    "question": "This economist is best known for his development of general equilibrium theory, which describes how supply and demand interact across multiple markets simultaneously.",
+    "correct": "Léon Walras",
+    "incorrect": ["John Maynard Keynes", "Adam Smith", "Milton Friedman", "Paul Samuelson", "Alfred Marshall"]
   }
 ]
