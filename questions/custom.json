@@ -123,5 +123,10 @@
     "question": "In Sikhism, the Five Ks are items that Guru Gobind Singh in 1699 commanded Khalsa Sikhs to wear at all times. Which is not one of the five items?",
     "correct": "Kamarkasa",
     "incorrect": ["Kesh", "Kangha", "Kara", "Kachera", "Kirpan"]
+  },
+  {
+    "question": "This author, known for exploring existential themes, wrote a novel where the protagonist murders his invalid wife by drowning her in a lake. His other works include The Fall and The Plague. Name this author of The Stranger, a key figure in absurdism.",
+    "correct": "Albert Camus",
+    "incorrect": ["Fyodor Dostoevsky", "Franz Kafka", "Jean-Paul Sartre", "Samuel Beckett", "Eugène Ionesco", "Saul Bellow"]
   }
 ]
