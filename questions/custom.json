@@ -65,7 +65,7 @@
     "incorrect": ["Jurassic Park", "E.T. the Extra-Terrestrial", "Indiana Jones and the Kingdom of the Crystal Skull", "The Lost World: Jurassic Park", "War of the Worlds", "Ready Player One", "Saving Private Ryan", "Jaws", "Indiana Jones and the Last Crusade", "Raiders of the Lost Ark", "The Adventures of Tintin", "Minority Report", "Catch Me If You Can", "Indiana Jones and the Temple of Doom", "Schindler's List", "Close Encounters of the Third Kind"]
   },
   {
-    "question": "The shortest war in history was between the United Kingdom and the Sultanate of Zanzibar on August 27, 1896, lasting approximately 40 minutes. Zanzibar eventually merged with Tanzania to form which modern nation?",
+    "question": "The shortest war in history was between the United Kingdom and the Sultanate of Zanzibar on August 27, 1896, lasting approximately 40 minutes. Zanzibar eventually merged with Tanganyika to form which modern nation?",
     "correct": "Tanzania",
     "incorrect": ["Kenya", "Uganda", "Rwanda", "Burundi", "Democratic Republic of the Congo", "Zambia", "Malawi", "Mozambique"]
   },
