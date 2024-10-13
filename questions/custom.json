@@ -138,5 +138,10 @@
     "question": "This economist is best known for his development of general equilibrium theory, which describes how supply and demand interact across multiple markets simultaneously.",
     "correct": "Léon Walras",
     "incorrect": ["John Maynard Keynes", "Adam Smith", "Milton Friedman", "Paul Samuelson", "Alfred Marshall"]
+  },
+  {
+    "question": "This Supreme Court decision from 1905 invalidated a law limiting bakers' working hours, ruling that it violated the 14th Amendment's right to freedom of contract. Name this controversial decision often cited as a key example of the court prioritizing economic liberties over labor regulations.",
+    "correct": "Lochner v. New York",
+    "incorrect": ["West Coast Hotel Co. v. Parrish", "Nebbia v. New York", "Loving v. Virginia", "Miranda v. Arizona", "Gitlow v. New York"]
   }
 ]
