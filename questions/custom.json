@@ -148,5 +148,10 @@
     "question": "On October 1, 2024, this person became the first female president of Mexico. Name this woman who prior to serving as president was the Head of Government of Mexico City.",
     "correct": "Claudia Sheinbaum",
     "incorrect": ["Xóchitl Gálvez", "Josefina Vázquez Mota", "Olga Sánchez Cordero", "Norma Lucía Piña Hernández", "Rosa Icela Rodríguez", "Alicia Bárcena"]
+  },
+  {
+    "question": "This college football team became the first to achieve 1000 wins after a 31-24 victory over Maryland on November 18, 2023. Name this university whose alumni include 8 domestic and foreign heads of state or heads of government.",
+    "correct": "University of Michigan",
+    "incorrect": ["University of Alabama", "Ohio State University", "Yale University", "Harvard University", "University of Pennsylvania", "Princeton University"]
   }
 ]
