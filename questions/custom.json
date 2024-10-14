@@ -153,5 +153,10 @@
     "question": "This college football team became the first to achieve 1000 wins after a 31-24 victory over Maryland on November 18, 2023. Name this university whose alumni include 8 domestic and foreign heads of state or heads of government.",
     "correct": "University of Michigan",
     "incorrect": ["University of Alabama", "Ohio State University", "Yale University", "Harvard University", "University of Pennsylvania", "Princeton University"]
+  },
+  {
+    "question": "This Russian novel follows the mental anguish and moral dilemmas of Rodion Raskolnikov who plans to kill a pawnbroker. Name this novel often considered one of the greatest works of world literature.",
+    "correct": "Crime and Punishment",
+    "incorrect": ["War and Peace", "The Brothers Karamazov", "Day of the Oprichnik", "The Dream Life of Sukhanov", "Anna Karenina", "The Slynx"]
   }
 ]
