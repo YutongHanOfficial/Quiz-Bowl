@@ -158,5 +158,10 @@
     "question": "This Russian novel follows the mental anguish and moral dilemmas of Rodion Raskolnikov who plans to kill a pawnbroker. Name this novel often considered one of the greatest works of world literature.",
     "correct": "Crime and Punishment",
     "incorrect": ["War and Peace", "The Brothers Karamazov", "Day of the Oprichnik", "The Dream Life of Sukhanov", "Anna Karenina", "The Slynx"]
+  },
+  {
+    "question": "The sun has not set on the British Empire in over two centuries. In October of 2024, the United Kingdom agreed to hand over sovereignty of the Chagos Islands to this nation. Name this country whose exclusive economic zone is more than 1000 times greater than its area.",
+    "correct": "Mauritius",
+    "incorrect": ["Maldives", "Seychelles", "Comoros", "Kenya", "Mozambique", "Tanzania", "Somalia", "Madagascar"]
   }
 ]
