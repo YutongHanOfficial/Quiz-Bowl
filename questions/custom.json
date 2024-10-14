@@ -143,5 +143,10 @@
     "question": "This Supreme Court decision from 1905 invalidated a law limiting bakers' working hours, ruling that it violated the 14th Amendment's right to freedom of contract. Name this controversial decision often cited as a key example of the court prioritizing economic liberties over labor regulations.",
     "correct": "Lochner v. New York",
     "incorrect": ["West Coast Hotel Co. v. Parrish", "Nebbia v. New York", "Loving v. Virginia", "Miranda v. Arizona", "Gitlow v. New York"]
+  },
+  {
+    "question": "On October 1, 2024, this person became the first female president of Mexico. Name this woman who prior to serving as president was the Head of Government of Mexico City.",
+    "correct": "Claudia Sheinbaum",
+    "incorrect": ["Xóchitl Gálvez", "Josefina Vázquez Mota", "Olga Sánchez Cordero", "Norma Lucía Piña Hernández", "Rosa Icela Rodríguez", "Alicia Bárcena"]
   }
 ]
