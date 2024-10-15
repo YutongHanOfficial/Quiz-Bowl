@@ -36,6 +36,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 v0.1.9 (Beta 0, Build 1, Release 9)
 
 * Added 1 custom question
+* Added Terms of Service
 </details>
 <!-- v0.1.8 -->
 <details>
