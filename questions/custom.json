@@ -168,5 +168,10 @@
     "question": "The Dassler brothers created two of the largest shoe manufacturers in the world. Adolf Dassler founded Adidas while Rudolf Dassler founded what company?",
     "correct": "Puma",
     "incorrect": ["Nike", "ASICS", "Sketchers", "Under Armour", "Fila"]
+  },
+  {
+    "question": "The Act Prohibiting Importation of Slaves took effect in what year which legally banned the importation of slaves into any port or place within the jurisdiction of the United States?",
+    "correct": "1808",
+    "incorrect": ["1865", "1812", "1827", "1799", "1840"]
   }
 ]
