@@ -173,5 +173,10 @@
     "question": "The Act Prohibiting Importation of Slaves took effect in what year which legally banned the importation of slaves into any port or place within the jurisdiction of the United States?",
     "correct": "1808",
     "incorrect": ["1865", "1812", "1827", "1799", "1840"]
+  },
+  {
+    "question": "This person became the first black woman to be elected to the United States Congress. Name this politician who was posthumously awarded the Presidential Medal of Freedom by Barack Obama.",
+    "correct": "Shirley Chisholm",
+    "incorrect": ["Kamala Harris", "Barbara Jordan", "Carol Moseley Braun", "Sojourner Truth", "Alice Walker", "Harriet Tubman"]
   }
 ]
