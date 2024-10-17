@@ -7,69 +7,94 @@
     <link rel="icon" type="image/png" href="/images/Favicon.png">
 
     <style>
-        /* Basic styles for the page */
+        /* Basic page styling */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             color: white;
             background-color: black;
-            overflow: hidden; /* Hide the overflow for the binary effect */
+            overflow: hidden; /* Hide the overflow to avoid scrollbars */
         }
-        header, footer {
+
+        header {
             text-align: center;
             background-color: #222;
             padding: 20px;
         }
-        a {
-            color: #00ff00;
+
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
 
-        /* Scrolling binary effect */
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Scrolling binary effect background */
         .binary {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Behind the content */
+            z-index: -1; /* Ensure it stays behind the content */
             display: flex;
             overflow: hidden;
-            opacity: 0.3; /* Slightly transparent */
+            opacity: 0.2; /* Slight transparency */
         }
+
         .binary-column {
             font-size: 16px;
             font-family: 'Courier New', Courier, monospace;
             color: rgba(0, 255, 0, 0.8);
             white-space: nowrap;
+            display: flex;
+            flex-direction: column;
             animation: scroll 10s linear infinite;
         }
+
         @keyframes scroll {
             0% { transform: translateY(100%); }
             100% { transform: translateY(-100%); }
         }
 
-        /* Styling the error message */
+        /* Styling for the error message */
         .error-screen {
             text-align: center;
             padding: 100px 20px;
         }
+
         .error-screen h2 {
             font-size: 48px;
             margin-bottom: 20px;
         }
+
         .error-screen h3 {
             font-size: 24px;
             margin-bottom: 20px;
         }
+
         .error-screen p {
             font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            padding: 20px;
         }
     </style>
 
 </head>
 <body>
-    <!-- Binary Scrolling Background -->
     <div class="binary" id="binary-background"></div>
 
     <header>
@@ -90,7 +115,7 @@
             <br>
             <h3>Oops! It seems like the page you're looking for doesn't exist.</h3>
             <br>
-            <p>⚠️<strong>Notice:</strong> Please check the URL for any mistakes, or return to the <a href="/">homepage</a>.</p>
+            <p><strong>Notice:</strong> Please check the URL for any mistakes, or return to the <a href="/">homepage</a>.</p>
         </section>
     </main>
 
