@@ -3,52 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>404 - Page Not Found</title>
     <link rel="icon" type="image/png" href="/images/Favicon.png">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden; /* Disable scrolling */
-            background-color: black; /* Set a dark background to contrast with binary */
-            color: white;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        header, footer {
-            position: relative; /* Keep header and footer on top of the background effect */
-            z-index: 10;
-        }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DBSW1VJB5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3DBSW1VJB5');
+    </script>
 
-        #binary-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1; /* Ensure the binary background is behind the main content */
-            pointer-events: none; /* Disable interaction with the background */
-        }
-
-        .binary {
-            font-family: monospace;
-            font-size: 18px;
-            color: #0f0;
-            white-space: nowrap;
-            position: absolute;
-            top: 0;
-            animation: scroll 10s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-    </style>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2342721268649961"
+     crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -63,53 +33,21 @@
         <button id="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
     </header>
 
-    <div id="binary-background"></div>
-
     <main>
-        <section class="difficulty-screen">
+        <section class="error-screen">
             <h2>404 - Page Not Found</h2>
             <br>
             <h3>Oops! It seems like the page you're looking for doesn't exist.</h3>
             <br>
-            <p>⚠️<strong>Notice:</strong> Please check the URL for any mistakes, or return to the homepage.</p>
+            <p>⚠️<strong>Notice:</strong> Please check the URL for any mistakes, or return to the <a href="/" style="color: #ffffff;">homepage</a>.</p>
         </section>
-        <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const binaryBackground = document.getElementById('binary-background');
-
-            const binaryEffect = () => {
-                const binaryStream = document.createElement('div');
-                binaryStream.className = 'binary';
-                
-                // Randomize binary sequence
-                let binaryText = '';
-                const length = Math.floor(Math.random() * 20) + 10; // Random length for variety
-                for (let i = 0; i < length; i++) {
-                    binaryText += Math.random() > 0.5 ? '1' : '0';
-                }
-                binaryStream.textContent = binaryText;
-
-                // Random horizontal position
-                binaryStream.style.left = `${Math.random() * 100}vw`;
-                
-                // Append the stream to the binary background
-                binaryBackground.appendChild(binaryStream);
-
-                // Remove the stream after it has fully scrolled off screen
-                setTimeout(() => {
-                    binaryBackground.removeChild(binaryStream);
-                }, 10000); // Duration of the animation (matching the CSS keyframe duration)
-            };
-
-            // Generate a new binary stream every 150ms
-            setInterval(binaryEffect, 150);
-        });
-    </script>
     </main>
 
     <footer>
         <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
         <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
