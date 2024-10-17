@@ -37,6 +37,7 @@ v0.1.10 (Beta 0, Build 1, Release 10)
 
 * Added 1 custom question
 * Added GB meet 1 scores
+* Disabled visit tracker
 </details>
 <!-- v0.1.9 -->
 <details>
