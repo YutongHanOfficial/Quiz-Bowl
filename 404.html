@@ -5,29 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
     <link rel="icon" type="image/png" href="/images/Favicon.png">
-    <link rel="stylesheet" href="styles.css">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DBSW1VJB5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3DBSW1VJB5');
-    </script>
+    <style>
+        /* Basic styles for the page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+            overflow: hidden; /* Hide the overflow for the binary effect */
+        }
+        header, footer {
+            text-align: center;
+            background-color: #222;
+            padding: 20px;
+        }
+        a {
+            color: #00ff00;
+        }
 
-    <!-- AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2342721268649961"
-     crossorigin="anonymous"></script>
+        /* Scrolling binary effect */
+        .binary {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind the content */
+            display: flex;
+            overflow: hidden;
+            opacity: 0.3; /* Slightly transparent */
+        }
+        .binary-column {
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgba(0, 255, 0, 0.8);
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+
+        /* Styling the error message */
+        .error-screen {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .error-screen h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .error-screen h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .error-screen p {
+            font-size: 18px;
+        }
+    </style>
+
 </head>
 <body>
+    <!-- Binary Scrolling Background -->
+    <div class="binary" id="binary-background"></div>
+
     <header>
-        <h1><a href="/" style="color: white; text-decoration: none;">Quiz Bowl Practice</a></h1>
+        <h1><a href="/" style="text-decoration: none;">Quiz Bowl Practice</a></h1>
         <nav>
             <ul class="navigation-menu">
-                <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
-                <li><a href="practice" style="color: white; text-decoration: none;">Practice</a></li>
-                <li><a href="about" style="color: white; text-decoration: none;">About</a></li>
+                <li><a href="/" style="text-decoration: none;">Home</a></li>
+                <li><a href="practice" style="text-decoration: none;">Practice</a></li>
+                <li><a href="about" style="text-decoration: none;">About</a></li>
             </ul>
         </nav>
         <button id="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
@@ -39,7 +90,7 @@
             <br>
             <h3>Oops! It seems like the page you're looking for doesn't exist.</h3>
             <br>
-            <p>⚠️<strong>Notice:</strong> Please check the URL for any mistakes, or return to the <a href="/" style="color: #ffffff;">homepage</a>.</p>
+            <p>⚠️<strong>Notice:</strong> Please check the URL for any mistakes, or return to the <a href="/">homepage</a>.</p>
         </section>
     </main>
 
@@ -48,6 +99,43 @@
         <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Function to generate random binary strings
+        function generateBinaryString(length) {
+            let binaryString = '';
+            for (let i = 0; i < length; i++) {
+                binaryString += Math.random() > 0.5 ? '1' : '0'; // Randomly choose 0 or 1
+            }
+            return binaryString;
+        }
+
+        // Create binary columns that scroll, and fill the screen dynamically
+        function createBinaryColumns() {
+            const binaryContainer = document.getElementById('binary-background');
+            const numColumns = Math.floor(window.innerWidth / 20); // Adjust columns based on screen width
+            const columnHeight = Math.floor(window.innerHeight / 16); // Adjust height to ensure scrolling covers the page
+
+            for (let i = 0; i < numColumns; i++) {
+                const column = document.createElement('div');
+                column.classList.add('binary-column');
+                column.style.animationDuration = `${Math.random() * 5 + 8}s`; // Randomize scroll speed
+
+                // Generate binary string long enough to cover the height of the page
+                column.textContent = generateBinaryString(columnHeight);
+
+                binaryContainer.appendChild(column);
+            }
+        }
+
+        // Run the function to generate the binary effect when the page loads
+        window.onload = function() {
+            createBinaryColumns();
+        };
+
+        // Optional: Dark mode toggle functionality
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
