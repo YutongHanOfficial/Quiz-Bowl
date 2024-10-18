@@ -188,5 +188,10 @@
     "question": "First identified as a distinct element in 1781, this element also known as wolfram has the atomic number 74. Name this metal which has the highest melting point of any element.",
     "correct": "Tungsten",
     "incorrect": ["Osmium", "Lead", "Chromium", "Molybdenum", "Gold"]
+  },
+  {
+    "question": "In physics, kinematics is the study of the motion of points, bodies, and systems of bodies without considering the forces that cause them to move. Which of the following is one of the four kinematic equations?",
+    "correct": "v = v₀ + at",
+    "incorrect": ["x = v²/2a", "x = (v + v₀)t", "x = v₀t + ½a²t²", "v = v₀ + a/t", "v = vt + ½at"]
   }
 ]
