@@ -178,5 +178,10 @@
     "question": "This person became the first black woman to be elected to the United States Congress. Name this politician who was posthumously awarded the Presidential Medal of Freedom by Barack Obama.",
     "correct": "Shirley Chisholm",
     "incorrect": ["Kamala Harris", "Barbara Jordan", "Carol Moseley Braun", "Sojourner Truth", "Alice Walker", "Harriet Tubman"]
+  },
+  {
+    "question": "Often considered one of the greatest chess players of all time, name this player who is known as DrDrunkenstein on Lichess.",
+    "correct": "Magnus Carlsen",
+    "incorrect": ["Garry Kasparov", "Anatoly Karpov", "Hikaru Nakamura", "Fabiano Caruana", "Viswanathan Anand"]
   }
 ]
