@@ -183,5 +183,10 @@
     "question": "Often considered one of the greatest chess players of all time, name this player who is known as DrDrunkenstein on Lichess.",
     "correct": "Magnus Carlsen",
     "incorrect": ["Garry Kasparov", "Anatoly Karpov", "Hikaru Nakamura", "Fabiano Caruana", "Viswanathan Anand"]
+  },
+  {
+    "question": "First identified as a distinct element in 1781, this element also known as wolfram has the atomic number 74. Name this metal which has the highest melting point of any element.",
+    "correct": "Tungsten",
+    "incorrect": ["Osmium", "Lead", "Chromium", "Molybdenum", "Gold"]
   }
 ]
