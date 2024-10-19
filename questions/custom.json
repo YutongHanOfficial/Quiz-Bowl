@@ -193,5 +193,15 @@
     "question": "In physics, kinematics is the study of the motion of points, bodies, and systems of bodies without considering the forces that cause them to move. Which of the following is one of the four kinematic equations?",
     "correct": "v = v₀ + at",
     "incorrect": ["x = v²/2a", "x = (v + v₀)t", "x = v₀t + ½a²t²", "v = v₀ + a/t", "v = vt + ½at"]
+  },
+  {
+    "question": "Somnambulism is the medical term for what condition which occurs during the slow-wave NREM-3 stage of sleep?",
+    "correct": "Sleepwalking",
+    "incorrect": ["Insomnia", "Sleep Apnea", "Narcolepsy", "Nightmare Disorder", "Sleep Paralysis"]
+  },
+  {
+    "question": "This city, known for its lavish casinos and luxury resorts, holds the title for the highest gambling revenue in the world.",
+    "correct": "Macau",
+    "incorrect": ["Las Vegas", "Monte Carlo", "Singapore", "London", "Paris"]
   }
 ]
