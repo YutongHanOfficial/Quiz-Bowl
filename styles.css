@@ -320,17 +320,95 @@ button.dark-mode:hover {
     background-color: #444;
 }
 
-/* Difficulty screen styling */
+/* Legal screen styling */
 .legal-screen {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
     background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 1200px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 20px auto;
     width: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headings */
+.legal-screen h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.legal-screen h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.legal-screen h4 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Indent subchapters */
+}
+
+/* Paragraphs */
+.legal-screen p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    padding-left: 10px; /* Indent paragraphs slightly */
+}
+
+/* List styling */
+.legal-screen ul {
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+.legal-screen li {
+    margin-bottom: 10px;
+}
+
+/* Subchapter indenting */
+.legal-screen ul ul {
+    list-style-type: circle; /* Different bullet style for sub-lists */
+    margin-left: 40px;
+}
+
+.legal-screen li::marker {
+    color: #555; /* Custom color for list markers */
+}
+
+/* Links */
+.legal-screen a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.legal-screen a:hover {
+    text-decoration: underline;
+}
+
+/* Spacing and section dividers */
+.legal-screen hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Borders for sections */
+.legal-screen .section {
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
