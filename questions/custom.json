@@ -203,5 +203,10 @@
     "question": "This city, known for its lavish casinos and luxury resorts, holds the title for the highest gambling revenue in the world.",
     "correct": "Macau",
     "incorrect": ["Las Vegas", "Monte Carlo", "Singapore", "London", "Paris"]
+  },
+  {
+    "question": "Name this U-shaped bone located in the anterior neck which is unique in that it does not directly articulate with any other bone. It serves as an attachment point for muscles involved in swallowing and speech, and plays a critical role in maintaining airway stability.",
+    "correct": "Hyoid",
+    "incorrect": ["Clavicle", "Mandible", "Scapula", "Sternum", "Maxilla"]
   }
 ]
