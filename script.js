@@ -167,19 +167,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         setDarkMode(!isDarkMode);
     });
-
-    // Load the header and footer when the DOM is fully loaded
-    $(document).ready(function () {
-        $('#header').load('header.html', function (response, status, xhr) {
-            if (status === "error") {
-                console.error("Error loading header: " + xhr.status + " " + xhr.statusText);
-            }
-        });
-
-        $('#footer').load('footer.html', function (response, status, xhr) {
-            if (status === "error") {
-                console.error("Error loading footer: " + xhr.status + " " + xhr.statusText);
-            }
-        });
-    });
 });
