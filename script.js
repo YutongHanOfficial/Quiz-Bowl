@@ -168,25 +168,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setDarkMode(!isDarkMode);
     });
 
-    function loadHTML(file, elementId) {
-    fetch(file)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error loading HTML:', error);
-        });
-    }
-
     // Load the header and footer when the DOM is fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-        loadHTML('header.html', 'header');
-        loadHTML('footer.html', 'footer');
+    $(document).ready(function () {
+        $('#header').load('header.html', function (response, status, xhr) {
+            if (status === "error") {
+                console.error("Error loading header: " + xhr.status + " " + xhr.statusText);
+            }
+        });
+
+        $('#footer').load('footer.html', function (response, status, xhr) {
+            if (status === "error") {
+                console.error("Error loading footer: " + xhr.status + " " + xhr.statusText);
+            }
+        });
     });
 });
