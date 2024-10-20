@@ -324,8 +324,8 @@ button.dark-mode:hover {
 .legal-screen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     text-align: left;
     background-color: #fff;
     padding: 20px;
