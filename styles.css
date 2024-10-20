@@ -319,3 +319,18 @@ button.option.incorrect.dark-mode {
 button.dark-mode:hover {
     background-color: #444;
 }
+
+/* Difficulty screen styling */
+.legal-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
