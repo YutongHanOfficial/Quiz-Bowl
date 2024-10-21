@@ -4,12 +4,12 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 **⚠️Notice:** This website is currently in testing; all features including questions and design are subject to change at any time without prior notice.
 
 ## Current Stats
-* 60 Questions
+* 61 Questions
   * 12 Expert
   * 2 Hard
   * 2 Medium
   * 2 Easy
-  * 42 Custom
+  * 43 Custom
 
 ## Difficulty Equivalents
 * Easy - Middle School
@@ -30,10 +30,10 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 * [CARD_0001-0002]: <kbd>[CARD I Packet 1](https://files.quizbowlpackets.com/3064/Packet%201.docx)</kbd>
 
 ## Version
-<!-- v0.1.14 -->
+<!-- v0.1.15 -->
 <details>
-<summary>Version 0.1.14 (October 20, 2024)</summary>
-v0.1.14 (Beta 0, Build 1, Release 14)
+<summary>Version 0.1.15 (October 21, 2024)</summary>
+v0.1.15 (Beta 0, Build 1, Release 15)
 
 * Added 1 custom question
 </details>
