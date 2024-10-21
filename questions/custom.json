@@ -208,5 +208,10 @@
     "question": "Name this U-shaped bone located in the anterior neck which is unique in that it does not directly articulate with any other bone. It serves as an attachment point for muscles involved in swallowing and speech, and plays a critical role in maintaining airway stability.",
     "correct": "Hyoid",
     "incorrect": ["Clavicle", "Mandible", "Scapula", "Sternum", "Maxilla"]
+  },
+  {
+    "question": "Nicknamed Big Blue, this American multinational technology company is the largest industrial research organization in the world. Name this corporation which invented the hard disk drive.",
+    "correct": "IBM",
+    "incorrect": ["HP", "Meta", "Dell", "Intel", "Apple", "Microsoft"]
   }
 ]
