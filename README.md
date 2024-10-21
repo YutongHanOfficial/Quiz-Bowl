@@ -30,6 +30,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 * [CARD_0001-0002]: <kbd>[CARD I Packet 1](https://files.quizbowlpackets.com/3064/Packet%201.docx)</kbd>
 
 ## Version
+Only the latest version will be shown here, look at UpdateLog.md to view past versions.
 <!-- v0.1.15 -->
 <details>
 <summary>Version 0.1.15 (October 21, 2024)</summary>
