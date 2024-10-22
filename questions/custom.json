@@ -213,5 +213,10 @@
     "question": "Nicknamed Big Blue, this American multinational technology company is the largest industrial research organization in the world. Name this corporation which invented the hard disk drive.",
     "correct": "IBM",
     "incorrect": ["HP", "Meta", "Dell", "Intel", "Apple", "Microsoft"]
+  },
+  {
+    "question": "Name this country's flag which is composed of a yellow top stripe, a green middle stripe, and a red top stripe.",
+    "correct": "Lithuania",
+    "incorrect": ["Bolivia", "Guinea", "Mali", "Republic of the Congo", "Cameroon", "Myanmar"]
   }
 ]
