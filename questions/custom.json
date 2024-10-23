@@ -218,5 +218,10 @@
     "question": "Name this country's flag which is composed of a yellow top stripe, a green middle stripe, and a red top stripe.",
     "correct": "Lithuania",
     "incorrect": ["Bolivia", "Guinea", "Mali", "Republic of the Congo", "Cameroon", "Myanmar"]
+  },
+  {
+    "question": "This NBA team originally played in Fort Wayne, Indiana, before relocating to its current city in 1957. Name this team known for its Bad Boys era which included the likes of Isiah Thomas and Dennis Rodman.",
+    "correct": "Detroit Pistons",
+    "incorrect": ["Indiana Pacers", "Chicago Bulls", "Cleveland Cavaliers", "Milwaukee Bucks", "Boston Celtics", "Denver Nuggets"]
   }
 ]
