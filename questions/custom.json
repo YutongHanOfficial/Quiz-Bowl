@@ -223,5 +223,10 @@
     "question": "This NBA team originally played in Fort Wayne, Indiana, before relocating to its current city in 1957. Name this team known for its Bad Boys era which included the likes of Isiah Thomas and Dennis Rodman.",
     "correct": "Detroit Pistons",
     "incorrect": ["Indiana Pacers", "Chicago Bulls", "Cleveland Cavaliers", "Milwaukee Bucks", "Boston Celtics", "Denver Nuggets"]
+  },
+  {
+    "question": "What grammatical term describes a verb form that functions as a noun, often ending in “-ing“?",
+    "correct": "Gerund",
+    "incorrect": ["Participle", "Infinitive", "Adverb", "Conjunction", "Preposition", "Pronoun"]
   }
 ]
