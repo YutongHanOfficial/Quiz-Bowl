@@ -1,4 +1,12 @@
 # Version
+<!-- v0.1.18 -->
+<details>
+<summary>Version 0.1.18 (October 24, 2024)</summary>
+v0.1.18 (Beta 0, Build 1, Release 18)
+
+* Added 1 custom question
+</details>
+
 <!-- v0.1.17 -->
 <details>
 <summary>Version 0.1.17 (October 23, 2024)</summary>
