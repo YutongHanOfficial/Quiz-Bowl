@@ -230,8 +230,13 @@
     "incorrect": ["Participle", "Infinitive", "Adverb", "Conjunction", "Preposition", "Pronoun"]
   },
   {
-    "question": "In email communication, one of the options of sending messages to multiple recipients is BCC. This option is often used to send emails to large groups of people, what does this acronym stand for?",
+    "question": "In email communication, one of the options for sending messages to multiple recipients is BCC. This option is often used to send emails to large groups of people, what does this acronym stand for?",
     "correct": "Blind Carbon Copy",
     "incorrect": ["Bulk Carbon Copy", "Basic Carbon Copy", "Blind Carbon Clone", "Bulk Carbon Clone", "Basic Carbon Clone"]
+  },
+  {
+    "question": "The French word “dormir“ most closely translates to what in English?",
+    "correct": "Sleep",
+    "incorrect": ["Dormitory", "Smell", "Drop", "Flag", "Slab", "Debt"]
   }
 ]
