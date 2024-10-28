@@ -1,4 +1,15 @@
 # Version
+Effective October 28, 2024, the update log will slow down to allow for larger updates.
+
+<!-- v0.1.20 -->
+<details>
+<summary>Version 0.1.20 (October 28, 2024)</summary>
+v0.1.20 (Beta 0, Build 1, Release 20)
+
+* Added 1 custom question
+* Updated GB past match info
+</details>
+
 <!-- v0.1.19 -->
 <details>
 <summary>Version 0.1.19 (October 25, 2024)</summary>
@@ -7,6 +18,7 @@ v0.1.19 (Beta 0, Build 1, Release 19)
 * Added 1 custom question
 * Added name to title tags
 </details>
+
 <!-- v0.1.18 -->
 <details>
 <summary>Version 0.1.18 (October 24, 2024)</summary>
