@@ -1,0 +1,414 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove bullets or list markers globally */
+ul, li {
+    list-style: none; /* Remove bullet points */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and footer styles */
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Difficulty screen styling */
+.difficulty-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Difficulty buttons styling */
+.difficulty-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Reuse styles from quiz options */
+.option {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make buttons stretch to full width */
+    text-align: center; /* Center the text */
+    list-style-type: none; /* Remove any bullet points */
+}
+
+/* Ensure all buttons take up the full width and have consistent height */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Make the options container take full width */
+}
+
+/* Hover effect for all options */
+.option:hover {
+    background-color: #e1e1e1;
+}
+
+/* Ensure hover effects remain after marking correct/incorrect */
+button.option.correct:hover {
+    background-color: #78ee78; /* Lighter green */
+}
+
+button.option.incorrect:hover {
+    background-color: #ffb4b3; /* Lighter red */
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    display: none; /* Hidden by default */
+}
+
+/* Question text styling */
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Options container styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the options container spans full width */
+}
+
+/* Option buttons styling */
+button.option {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensure each option takes the full width */
+    text-align: center; /* Center text within the button */
+}
+
+/* Feedback text */
+#feedback {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles for correct and incorrect answers */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Apply color changes to option buttons for correct/incorrect answers */
+button.option.correct {
+    background-color: #90ee90; /* Correct - green */
+}
+
+button.option.incorrect {
+    background-color: #ffcccb; /* Incorrect - red */
+}
+
+/* Score tracker styling */
+#score-tracker {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styles for the Next Question button */
+#next-btn {
+    padding: 10px 20px; /* Adjust padding for proper button size */
+    background-color: #008CBA; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Button size matches the text length */
+    display: inline-block; /* Ensure the button is only as wide as needed */
+}
+
+/* Hover effect for Next Question button */
+#next-btn:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+
+/* Centering the Next Question button */
+#next-btn {
+    display: block;
+    margin: 20px auto; /* Center button horizontally */
+}
+
+/* Ensure quiz container is centered with proper margin on large screens */
+@media (min-width: 768px) {
+    main {
+        padding: 40px 0;
+    }
+
+    .quiz-container {
+        max-width: 500px;
+    }
+}
+
+.navigation-menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange links in a row */
+}
+
+.navigation-menu li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+.navigation-menu a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+.navigation-menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hidden info */
+.hidden {
+    display: none;
+}
+
+/* Dark mode button styling */
+#dark-mode-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Ensure it's aligned */
+    right: 20px;        /* Position 20px from the right */
+    top: 20px;          /* Position 20px from the top */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #444; /* Darker on hover */
+}
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #1c1c1c;
+}
+
+header.dark-mode a, footer.dark-mode a {
+    color: white;
+}
+
+button.dark-mode {
+    background-color: #333;
+    color: white;
+    border: 1px solid #fff;
+}
+
+button.dark-mode:hover {
+    background-color: #444;
+}
+
+.difficulty-screen.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.quiz-container.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.option.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+button.option.correct.dark-mode {
+    background-color: #4caf50; /* Correct - dark green */
+}
+
+button.option.incorrect.dark-mode {
+    background-color: #f44336; /* Incorrect - dark red */
+}
+
+#next-btn.dark-mode {
+    background-color: #006f9a; /* Darker blue */
+    color: white;
+}
+
+#feedback.dark-mode {
+    color: white;
+}
+
+/* Dark mode styling for score tracker */
+#score-tracker.dark-mode {
+    color: white;
+}
+
+/* Additional elements (like hover effects) in dark mode */
+button.dark-mode:hover {
+    background-color: #444;
+}
+
+/* Legal screen styling */
+.legal-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 20px auto;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headings */
+.legal-screen h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.legal-screen h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.legal-screen h4 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Indent subchapters */
+}
+
+/* Paragraphs */
+.legal-screen p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    padding-left: 10px; /* Indent paragraphs slightly */
+}
+
+/* List styling */
+.legal-screen ul {
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+.legal-screen li {
+    margin-bottom: 10px;
+}
+
+/* Subchapter indenting */
+.legal-screen ul ul {
+    list-style-type: circle; /* Different bullet style for sub-lists */
+    margin-left: 40px;
+}
+
+.legal-screen li::marker {
+    color: #555; /* Custom color for list markers */
+}
+
+/* Links */
+.legal-screen a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.legal-screen a:hover {
+    text-decoration: underline;
+}
+
+/* Spacing and section dividers */
+.legal-screen hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Borders for sections */
+.legal-screen .section {
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
