@@ -37,6 +37,7 @@ Only the latest version will be shown here, look at UpdateLog.md to view past ve
 v0.1.20 (Beta 0, Build 1, Release 20)
 
 * Added 1 custom question
+* Added support email
 * Updated GB past match info
 </details>
 
