@@ -238,5 +238,15 @@
     "question": "The French word “dormir“ most closely translates to what in English?",
     "correct": "Sleep",
     "incorrect": ["Dormitory", "Smell", "Drop", "Flag", "Slab", "Debt"]
+  },
+  {
+    "question": "The first full-length project by this artist was a mixtape titled Owl Pharaoh. Name this rapper whose real name is Jacques Bermon Webster II.",
+    "correct": "Travis Scott",
+    "incorrect": ["Young Thug", "Lil Uzi Vert", "Future", "21 Savage", "Gunna", "Chief Keef"]
+  },
+  {
+    "question": "This country has the second highest Catholic population in the world by percentage. Name this country which was a Portuguese colony until 1975.",
+    "correct": "Timor-Leste",
+    "incorrect": ["Angola", "Guinea", "Mozambique", "São Tomé and Príncipe", "Uruguay", "Brazil"]
   }
 ]
