@@ -7,6 +7,7 @@ Effective October 28, 2024, the update log will slow down to allow for larger up
 v0.1.20 (Beta 0, Build 1, Release 20)
 
 * Added 1 custom question
+* Added support email
 * Updated GB past match info
 </details>
 
