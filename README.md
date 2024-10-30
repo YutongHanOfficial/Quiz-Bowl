@@ -31,14 +31,15 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 
 ## Version
 Only the latest version will be shown here, look at UpdateLog.md to view past versions.
-<!-- v0.1.20 -->
+<!-- v0.2.1 -->
 <details>
-<summary>Version 0.1.20 (October 28, 2024)</summary>
-v0.1.20 (Beta 0, Build 1, Release 20)
+<summary>Version 0.2.1 (October 30, 2024)</summary>
+v0.2.1 (Beta 0, Build 2, Release 1)
 
-* Added 1 custom question
-* Added support email
-* Updated GB past match info
+* Added 2 custom questions
+* Added leagues
+* Added GAL league
+* Made links consistent
 </details>
 
 ## Legal
