@@ -248,5 +248,10 @@
     "question": "This country has the second highest Catholic population in the world by percentage. Name this country which was a Portuguese colony until 1975.",
     "correct": "Timor-Leste",
     "incorrect": ["Angola", "Guinea", "Mozambique", "São Tomé and Príncipe", "Uruguay", "Brazil"]
+  },
+  {
+    "question": "As an officer of the Imperial Russian Army, he rose to the rank of Engineer-General, taught fortifications in Russian military academies and wrote a number of monographs on the subject. Name this Russian composer who was a member of the Belyayev circle and The Five.",
+    "correct": "César Cui",
+    "incorrect": ["Mily Balakirev", "Modest Mussorgsky", "Nikolai Rimsky-Korsakov", "Alexander Borodin", "Pyotr Ilyich Tchaikovsky", "Igor Stravinsky"]
   }
 ]
