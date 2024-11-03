@@ -71,6 +71,16 @@
         <p>&copy; 2024 Quiz Bowl Practice. All rights reserved.</p>
         <p>Website designed by Yutong Han. Quiz Bowl Practice is a subsidiary of Yutong Studios.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const href = link.getAttribute('href');
+            // Skip links that are already absolute URLs (starting with "http" or "/")
+            if (href && !href.startsWith('http') && !href.startsWith('/')) {
+                link.setAttribute('href', '/' + href);
+            }
+        });
+    </script>
     
     <!-- <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CMmI9bPsfkwSk08VKiaBLW7HAgPLYFVjSEApgXYv5uw&cl=ffffff&w=a" style="display: none;"></script> -->
     <script src="script.js"></script>
