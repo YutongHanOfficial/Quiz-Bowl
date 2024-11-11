@@ -16,6 +16,7 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 * Medium - High School JV
 * Hard - High School Varsity
 * Expert - Nationals
+* Custom - Mix of Everything
 
 ## Question Codes
 * [NAQT]: National Academic Quiz Tournaments, LLC.
