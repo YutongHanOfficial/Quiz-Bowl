@@ -253,5 +253,10 @@
     "question": "As an officer of the Imperial Russian Army, he rose to the rank of Engineer-General, taught fortifications in Russian military academies and wrote a number of monographs on the subject. Name this Russian composer who was a member of the Belyayev circle and The Five.",
     "correct": "César Cui",
     "incorrect": ["Mily Balakirev", "Modest Mussorgsky", "Nikolai Rimsky-Korsakov", "Alexander Borodin", "Pyotr Ilyich Tchaikovsky", "Igor Stravinsky"]
+  },
+  {
+    "question": "If 1 United States Dollar is equivalent to 0.31 Kuwaiti Dinars and 1 Kuwaiti Dinar is equivalent to 4.35 Singapore Dollars, how many Singapore Dollars are equivalent to 1 United States Dollar?",
+    "correct": "1.35 SGD",
+    "incorrect": ["0.74 SGD", "14.03 SGD", "1.42 SGD", "9.85 SGD", "0.98 SGD", "1.15 SGD"]
   }
 ]
