@@ -4,12 +4,12 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 **⚠️Notice:** This website is currently in testing; all features including questions and design are subject to change at any time without prior notice.
 
 ## Current Stats
-* 68 Questions
+* 70 Questions
   * 12 Expert
   * 2 Hard
   * 2 Medium
   * 2 Easy
-  * 50 Custom
+  * 52 Custom
 
 ## Difficulty Equivalents
 * Easy - Middle School
@@ -32,15 +32,15 @@ A website dedicated to helping **you** get better at Quiz Bowl.
 
 ## Version
 Only the latest version will be shown here, look at UpdateLog.md to view past versions.
-<!-- v0.2.1 -->
+<!-- v0.2.2 -->
 <details>
-<summary>Version 0.2.1 (October 30, 2024)</summary>
-v0.2.1 (Beta 0, Build 2, Release 1)
+<summary>Version 0.2.2 (November 12, 2024)</summary>
+v0.2.2 (Beta 0, Build 2, Release 2)
 
 * Added 2 custom questions
-* Added leagues
-* Added GAL league
-* Made links consistent
+* Revamped leagues
+* Added leagues as a navigation link
+* Added new league
 </details>
 
 ## Legal
