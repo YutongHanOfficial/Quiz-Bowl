@@ -1,5 +1,16 @@
 # Version
 Effective October 28, 2024, the update log will slow down to allow for larger updates.
+<!-- v0.2.2 -->
+<details>
+<summary>Version 0.2.2 (November 12, 2024)</summary>
+v0.2.2 (Beta 0, Build 2, Release 2)
+
+* Added 2 custom questions
+* Revamped leagues
+* Added leagues as a navigation link
+* Added new league
+</details>
+
 <!-- v0.2.1 -->
 <details>
 <summary>Version 0.2.1 (October 30, 2024)</summary>
