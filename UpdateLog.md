@@ -7,6 +7,7 @@ v0.2.2 (Beta 0, Build 2, Release 2)
 
 * Added 2 custom questions
 * Revamped leagues
+* Added contact page
 * Added leagues as a navigation link
 * Added new league
 </details>
