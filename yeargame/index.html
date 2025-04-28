@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="setup-screen">
+        <h1>Set Your Health</h1>
+        <input type="range" id="startingHealth" min="1" max="1000" value="100" class="slider">
+        <p id="healthDisplay">Health: 100</p>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div class="info-bar">
+            <span>Score: <span id="score">0</span></span>
+            <span>Health: <span id="health">100</span></span>
+        </div>
+
+        <div class="game-content">
+            <h2 id="event">Loading...</h2>
+            <p id="question">In what year did this happen?</p>
+
+            <div class="input-container">
+                <input type="range" id="yearSlider" min="1575" max="2025" value="1900" class="slider">
+                <input type="number" id="yearInput" min="1575" max="2025" value="1900">
+            </div>
+
+            <button onclick="submitGuess()">Submit</button>
+            <p id="feedback"></p>
+            <button id="continueBtn" onclick="nextQuestion()" class="hidden">Continue</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
